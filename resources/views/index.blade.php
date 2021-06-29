@@ -13,10 +13,6 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <h1 class="m-b-20"><strong>Build Innovative Web and Mobile Applications</strong></h1>
-                                <!--
-                                <p class="m-b-40">See how your users experience your website in realtime or view  <br> trends to see any changes in performance over time.</p>
-                                <p><a class="btn btn-lg btn-circle btn-outline-new-white" href="javascript:void(0);">Learn More</a></p>
-                                -->
                             </div>
                         </div>
                     </div>
@@ -26,27 +22,10 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <h1 class="m-b-20"><strong>Custom Softwares and SaaS Products</strong></h1>
-                                <!--
-                                <p class="m-b-40">We combine people, platforms, and software</p>
-                                <p><a class="btn btn-lg btn-circle btn-warning" href="javascript:void(0);">Get Started</a><a class="btn btn-lg btn-circle btn-outline-new-white" href="javascript:void(0);">Learn More</a></p>
-                                -->
                             </div>
                         </div>
                     </div>
                 </li>
-                <!--
-                <li class="parallax text-center" data-overlay="0.7" data-gradient="1"><img src="{{ asset('assets/images/module-25.jpg') }}" alt="">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <h1 class="m-b-20"><strong>Your customers will love you <br> one minute from now.</strong></h1>
-                                <p class="m-b-40">See how your users experience your website in realtime or view  <br> trends to see any changes in performance over time.</p>
-                                <p><a class="btn btn-lg btn-circle btn-new-white" href="javascript:void(0);">Get Started</a><a class="btn btn-lg btn-circle btn-outline-new-white" href="javascript:void(0);">Learn More</a></p>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                -->
             </ul>
             <div class="slides-navigation"><a class="prev" href="javascript:void(0);"><span class="ti-angle-left"></span></a><a class="next" href="javascript:void(0);"><span class="ti-angle-right"></span></a></div>
         </section>
@@ -347,152 +326,6 @@
         </section>
         <!-- Alt Services end-->
 
-        <!-- Team-->
-        <!--
-        <section class="module" id="team">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 m-auto text-center">
-                        <h1>Creative People.</h1>
-                        <p class="lead">See how your users experience your website in realtime or view trends to see any changes in performance over time.</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="space" data-MY="60px"></div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-4 col-md-6">
-                        <div class="team-item">
-                            <div class="team-image"><img src="{{ asset('assets/images/team/1.jpg') }}" alt="">
-                                <div class="team-wrap">
-                                    <div class="team-content">
-                                        <h6 class="team-name">Emma Connor</h6>
-                                        <div class="team-role">Designer</div>
-                                    </div>
-                                    <div class="team-content-social">
-                                        <ul>
-                                            <li><a href="javascript:void(0);"><i class="fab fa-twitter"></i></a></li>
-                                            <li><a href="javascript:void(0);"><i class="fab fa-instagram"></i></a></li>
-                                            <li><a href="javascript:void(0);"><i class="fab fa-pinterest-p"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="team-item">
-                            <div class="team-image"><img src="{{ asset('assets/images/team/2.jpg') }}" alt="">
-                                <div class="team-wrap">
-                                    <div class="team-content">
-                                        <h6 class="team-name">Richard Bauer</h6>
-                                        <div class="team-role">Developer</div>
-                                    </div>
-                                    <div class="team-content-social">
-                                        <ul>
-                                            <li><a href="javascript:void(0);"><i class="fab fa-twitter"></i></a></li>
-                                            <li><a href="javascript:void(0);"><i class="fab fa-instagram"></i></a></li>
-                                            <li><a href="javascript:void(0);"><i class="fab fa-pinterest-p"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="team-item">
-                            <div class="team-image"><img src="{{ asset('assets/images/team/3.jpg') }}" alt="">
-                                <div class="team-wrap">
-                                    <div class="team-content">
-                                        <h6 class="team-name">John Pope</h6>
-                                        <div class="team-role">Founder</div>
-                                    </div>
-                                    <div class="team-content-social">
-                                        <ul>
-                                            <li><a href="javascript:void(0);"><i class="fab fa-twitter"></i></a></li>
-                                            <li><a href="javascript:void(0);"><i class="fab fa-instagram"></i></a></li>
-                                            <li><a href="javascript:void(0);"><i class="fab fa-pinterest-p"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="team-item">
-                            <div class="team-image"><img src="{{ asset('assets/images/team/4.jpg') }}" alt="">
-                                <div class="team-wrap">
-                                    <div class="team-content">
-                                        <h6 class="team-name">Sara Smith</h6>
-                                        <div class="team-role">Designer</div>
-                                    </div>
-                                    <div class="team-content-social">
-                                        <ul>
-                                            <li><a href="javascript:void(0);"><i class="fab fa-twitter"></i></a></li>
-                                            <li><a href="javascript:void(0);"><i class="fab fa-instagram"></i></a></li>
-                                            <li><a href="javascript:void(0);"><i class="fab fa-pinterest-p"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="team-item">
-                            <div class="team-image"><img src="{{ asset('assets/images/team/5.jpg') }}" alt="">
-                                <div class="team-wrap">
-                                    <div class="team-content">
-                                        <h6 class="team-name">Emma Connor</h6>
-                                        <div class="team-role">Developer</div>
-                                    </div>
-                                    <div class="team-content-social">
-                                        <ul>
-                                            <li><a href="javascript:void(0);"><i class="fab fa-twitter"></i></a></li>
-                                            <li><a href="javascript:void(0);"><i class="fab fa-instagram"></i></a></li>
-                                            <li><a href="javascript:void(0);"><i class="fab fa-pinterest-p"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="team-item">
-                            <div class="team-image"><img src="{{ asset('assets/images/team/6.jpg') }}" alt="">
-                                <div class="team-wrap">
-                                    <div class="team-content">
-                                        <h6 class="team-name">Peter Chapman</h6>
-                                        <div class="team-role">Founder</div>
-                                    </div>
-                                    <div class="team-content-social">
-                                        <ul>
-                                            <li><a href="javascript:void(0);"><i class="fab fa-twitter"></i></a></li>
-                                            <li><a href="javascript:void(0);"><i class="fab fa-instagram"></i></a></li>
-                                            <li><a href="javascript:void(0);"><i class="fab fa-pinterest-p"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="space" data-MY="30px"></div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <p class="text-center"><a class="btn btn-circle btn-outline-brand" href="javascript:void(0);">About Us</a></p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        -->
-        <!-- Team end-->
-
         <!-- Testimonials-->
         <section class="module parallax" data-background="{{ asset('assets/images/module-3.jpg') }}" data-overlay="0.5">
             <div class="container">
@@ -604,70 +437,6 @@
             </div>
         </section>
         <!-- Clients end-->
-
-        <!-- Posts-->
-        <!--
-        <section class="module" id="blog">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 m-auto text-center">
-                        <h1>Latest articles.</h1>
-                        <p class="lead">See how your users experience your website in realtime or view trends to see any changes in performance over time.</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="space" data-MY="60px"></div>
-                    </div>
-                </div>
-                <div class="row row-post-masonry">
-                    <div class="col-md-4 post-item">
-                        <article class="post">
-                            <div class="post-preview"><a href="javascript:void(0);"><img src="{{ asset('assets/images/blog/1.jpg') }}" alt=""></a></div>
-                            <div class="post-wrapper">
-                                <div class="post-header">
-                                    <h2 class="post-title"><a href="blog-single.html">Bluetooth Speaker</a></h2>
-                                </div>
-                                <div class="post-content">
-                                    <p>See how your users experience your website in realtime or view trends to see any changes in performance over time.</p>
-                                    <p><a href="javascript:void(0);">Read more</a></p>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="col-md-4 post-item">
-                        <article class="post">
-                            <div class="post-preview"><a href="javascript:void(0);"><img src="{{ asset('assets/images/blog/3.jpg') }}" alt=""></a></div>
-                            <div class="post-wrapper">
-                                <div class="post-header">
-                                    <h2 class="post-title"><a href="blog-single.html">Minimalist Chandelier</a></h2>
-                                </div>
-                                <div class="post-content">
-                                    <p>See how your users experience your website in realtime or view trends to see any changes in performance over time.</p>
-                                    <p><a href="javascript:void(0);">Read more</a></p>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="col-md-4 post-item">
-                        <article class="post">
-                            <div class="post-preview"><a href="javascript:void(0);"><img src="{{ asset('assets/images/blog/5.jpg') }}" alt=""></a></div>
-                            <div class="post-wrapper">
-                                <div class="post-header">
-                                    <h2 class="post-title"><a href="blog-single.html">Standard Shape</a></h2>
-                                </div>
-                                <div class="post-content">
-                                    <p>See how your users experience your website in realtime or view trends to see any changes in performance over time.</p>
-                                    <p><a href="javascript:void(0);">Read more</a></p>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-            </div>
-        </section>
-        -->
-        <!-- Posts end-->
 
         <!-- Form-->
         <section class="module divider-top" id="contact">
@@ -800,54 +569,9 @@
                                         E-mail: support@atmax.com<br>
                                         Phone: 754-207-4606<br>
                                     </p>
-                                    <!--
-                                    <ul class="social-icons">
-                                        <li><a href="javascript:void(0);"><i class="fab fa-twitter"></i></a></li>
-                                        <li><a href="javascript:void(0);"><i class="fab fa-instagram"></i></a></li>
-                                        <li><a href="javascript:void(0);"><i class="fab fa-facebook-f"></i></a></li>
-                                        <li><a href="javascript:void(0);"><i class="fab fa-pinterest-p"></i></a></li>
-                                    </ul>
-                                    -->
                                 </div>
                             </aside>
                         </div>
-                        <!--
-                        <div class="col-md-3">
-                            <aside class="widget widget-recent-entries">
-                                <div class="widget-title">
-                                    <h6>Recent Posts</h6>
-                                </div>
-                                <ul>
-                                    <li><a href="javascript:void(0);">Map where your photos were taken and discover local points.</a><span class="post-date">May 8, 2018</span></li>
-                                    <li><a href="javascript:void(0);">Map where your photos were taken and discover local points.</a><span class="post-date">April 7, 2018</span></li>
-                                    <li><a href="javascript:void(0);">Map where your photos were taken and discover local points.</a><span class="post-date">September 7, 2018</span></li>
-                                </ul>
-                            </aside>
-                        </div>
-                        <div class="col-md-3">
-                            <aside class="widget twitter-feed-widget">
-                                <div class="widget-title">
-                                    <h6>Twitter Feed</h6>
-                                </div>
-                                <div class="twitter-feed" data-twitter="double_theme" data-number="1"></div>
-                            </aside>
-                        </div>
-                        <div class="col-md-3">
-                            <aside class="widget widget-recent-works">
-                                <div class="widget-title">
-                                    <h6>Portfolio</h6>
-                                </div>
-                                <ul>
-                                    <li><a href="javascript:void(0);"><img src="{{ asset('assets/images/widgets/1.jpg') }}" alt=""></a></li>
-                                    <li><a href="javascript:void(0);"><img src="{{ asset('assets/images/widgets/2.jpg') }}" alt=""></a></li>
-                                    <li><a href="javascript:void(0);"><img src="{{ asset('assets/images/widgets/3.jpg') }}" alt=""></a></li>
-                                    <li><a href="javascript:void(0);"><img src="{{ asset('assets/images/widgets/7.jpg') }}" alt=""></a></li>
-                                    <li><a href="javascript:void(0);"><img src="{{ asset('assets/images/widgets/8.jpg') }}" alt=""></a></li>
-                                    <li><a href="javascript:void(0);"><img src="{{ asset('assets/images/widgets/6.jpg') }}" alt=""></a></li>
-                                </ul>
-                            </aside>
-                        </div>
-                        -->
                     </div>
                 </div>
             </div>
@@ -878,13 +602,6 @@
         $("#contact_us").on('submit', function (e) {
 
             var data = $(this).serializeArray()
-            
-            // var jsObj = {}
-            // $.each(data, function (index, object) {
-
-            //     jsObj[object.name] = object.value
-            // })
-
             $.ajax({
                 url: "{{ route('contact') }}",
                 type: 'POST',

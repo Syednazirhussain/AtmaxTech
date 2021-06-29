@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-    
-<!-- Mirrored from offsetcode.com/themes/boomerang/1.3/op-index-3.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 24 Jun 2021 03:19:18 GMT -->
 <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -50,11 +48,6 @@
                             <li><a href="#portfolio"><span class="menu-item-span">Portfolio</span></a></li>
                             <li><a href="#about"><span class="menu-item-span">About Us</span></a></li>
                             <li><a href="#contact"><span class="menu-item-span">Contact Us</span></a></li>
-                            <!--
-                            <li><a href="#blog"><span class="menu-item-span">Blog</span></a></li>
-                            <li><a href="#team"><span class="menu-item-span">Team</span></a></li>
-                            <li><a href="start.html"><span class="menu-item-span">Demos</span></a></li>
-                            -->
                         </ul>
                     </div>
                 </div>
@@ -122,7 +115,6 @@
         <script src="{{ asset('assets/js/custom/jquery.min.js') }}"></script>
         <script src="{{ asset('assets/js/custom/popper.min.js') }}"></script>
         <script src="{{ asset('assets/js/bootstrap/bootstrap.min.js') }}"></script>
-        {{-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA0rANX07hh6ASNKdBr4mZH0KZSqbHYc3Q"></script> --}}
         <script src="{{ asset('assets/js/custom/plugins.min.js') }}"></script>
         <script src="{{ asset('assets/js/custom/custom.min.js') }}"></script>
 
