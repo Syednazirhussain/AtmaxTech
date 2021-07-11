@@ -455,7 +455,7 @@
                 <div class="row">
                     <div class="col-md-8 m-auto">
                         <form id="contact_us" method="post" novalidate>
-                            @csrf
+
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">

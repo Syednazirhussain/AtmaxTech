@@ -52,65 +52,11 @@
                         </ul>
                     </div>
                 </div>
-                <div class="extra-nav">
-                    <ul>
-                        <li>
-                            <a class="off-canvas-open" href="javascript:void(0);">
-                                <span class="menu-item-span"><i class="ti-menu"></i></span>
-                            </a>
-                        </li>
-                        <li class="nav-toggle">
-                            <a href="javascript:void(0);" data-toggle="collapse" data-target=".inner-navigation">
-                                <span class="menu-item-span"><i class="ti-menu"></i></span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
             </div>
         </header>
         <!-- Header end-->
 
         @yield('content')
-
-        <!-- Off canvas-->
-        <div class="off-canvas-sidebar">
-            <div class="off-canvas-sidebar-wrapper">
-                <div class="off-canvas-header"><a class="off-canvas-close" href="javascript:void(0);"><span class="ti-close"></span></a></div>
-                <div class="off-canvas-content">
-                    <!-- Text widget-->
-                    <aside class="widget widget-text">
-                        <div class="textwidget">
-                            <p class="text-center"><img src="{{ asset('assets/images/logo-light-2.png') }}" alt="" width="80px"></p>
-                            <p class="text-center">See how users experience your website in realtime to see changes.</p>
-                        </div>
-                    </aside>
-                    <!-- Recent portfolio widget-->
-                    <aside class="widget widget-recent-works">
-                        <ul>
-                            <li><a href="javascript:void(0);"><img src="{{ asset('assets/images/widgets/1.jpg') }}" alt=""></a></li>
-                            <li><a href="javascript:void(0);"><img src="{{ asset('assets/images/widgets/2.jpg') }}" alt=""></a></li>
-                            <li><a href="javascript:void(0);"><img src="{{ asset('assets/images/widgets/3.jpg') }}" alt=""></a></li>
-                            <li><a href="javascript:void(0);"><img src="{{ asset('assets/images/widgets/4.jpg') }}" alt=""></a></li>
-                            <li><a href="javascript:void(0);"><img src="{{ asset('assets/images/widgets/5.jpg') }}" alt=""></a></li>
-                            <li><a href="javascript:void(0);"><img src="{{ asset('assets/images/widgets/6.jpg') }}" alt=""></a></li>
-                            <li><a href="javascript:void(0);"><img src="{{ asset('assets/images/widgets/7.jpg') }}" alt=""></a></li>
-                            <li><a href="javascript:void(0);"><img src="{{ asset('assets/images/widgets/8.jpg') }}" alt=""></a></li>
-                            <li><a href="javascript:void(0);"><img src="{{ asset('assets/images/widgets/9.jpg') }}" alt=""></a></li>
-                        </ul>
-                    </aside>
-                    <!-- Social Icons-->
-                    <ul class="social-icons text-center">
-                        <li><a href="javascript:void(0);"><i class="fab fa-twitter"></i></a></li>
-                        <li><a href="javascript:void(0);"><i class="fab fa-instagram"></i></a></li>
-                        <li><a href="javascript:void(0);"><i class="fab fa-facebook-f"></i></a></li>
-                        <li><a href="javascript:void(0);"><i class="fab fa-pinterest-p"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <!-- Off canvas end-->
-
-        <!-- To top button--><a class="scroll-top" href="#top"><i class="fas fa-angle-up"></i></a>
 
         <!-- Scripts-->
         <script src="{{ asset('assets/js/custom/jquery.min.js') }}"></script>
