@@ -587,10 +587,7 @@
                 </div>
             </div>
         </footer>
-        <!-- Footer end-->
     </div>
-    <!-- Wrapper end-->
-
 @endsection
 
 @section('js')
