@@ -16,7 +16,7 @@ class HomeController extends Controller
 
             $validator = Validator::make($request->all(), [
                 'name'      => 'required',
-                'email'     => 'required',
+                'email'     => 'required|email',
                 'message_text'  => 'required',
                 'subject'   => 'required'
             ]);
@@ -32,7 +32,9 @@ class HomeController extends Controller
                 return response()->json($response);
             }
 
-            Mail::to("syednazir13@gmail.com")->send(new ContactUs($request->except('_token')));
+            $email = $request->get('email');
+
+            Mail::to($email)->send(new ContactUs($request->except('_token')));
             
             return response()->json([
                 'status'    => 'success',
