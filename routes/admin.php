@@ -18,10 +18,12 @@ Route::group(['prefix' => 'admin'], function () {
 
 	Route::get('/', [HomeController::class, 'index'])->name('admin.root');
 	Route::get('/login', [HomeController::class, 'login'])->name('admin.login');
+	Route::post('/login', [HomeController::class, 'login_attempt'])->name('admin.login.attempt');
 
-	// Route::group(['middleware' => 'auth'], function () {
+	Route::group(['middleware' => 'auth'], function () {
 
 		Route::get('/dashboard', [HomeController::class, 'dashboard'])->name('admin.dashboard');
-	// });
+		Route::post('/logout', [HomeController::class, 'logout'])->name('admin.logout');
+	});
 
 });

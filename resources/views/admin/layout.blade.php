@@ -47,15 +47,18 @@
           <i class="fas fa-expand-arrows-alt"></i>
         </a>
       </li>
+      {{--       
       <li class="nav-item">
         <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="javascript:void(0);" role="button">
           <i class="fas fa-th-large"></i>
         </a>
-      </li>
+      </li> 
+      --}}
       <li class="nav-item">
-        <a class="nav-link" data-widget="fullscreen" href="javascript:void(0);" role="button">
-          <i class="fa fa-power-off"></i>
-        </a>
+        <form action="{{ route('admin.logout') }}" method="post">
+          @csrf
+          <button type="submit" class="nav-link"><i class="fa fa-power-off"></i></button>
+        </form>
       </li>
 
     </ul>
@@ -113,9 +116,10 @@
   </footer>
 
   <!-- Control Sidebar -->
+  {{--   
   <aside class="control-sidebar control-sidebar-dark">
-    <!-- Control sidebar content goes here -->
-  </aside>
+  </aside> 
+  --}}
   <!-- /.control-sidebar -->
 </div>
 <!-- ./wrapper -->
