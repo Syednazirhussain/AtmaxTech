@@ -27,6 +27,12 @@ Route::group(['prefix' => 'admin'], function () {
 		
 		Route::get('/general_information', [HomeController::class, 'general_information'])->name('admin.page.general_information');
 		Route::post('/general_information', [HomeController::class, 'general_information_update'])->name('admin.page.general_information.update');
+		
+		Route::get('/pages/about', [HomeController::class, 'about'])->name('admin.page.about');
+		Route::post('/pages/about', [HomeController::class, 'about_page_update'])->name('admin.page.about.update');
+	
+
+
 	});
 
 });

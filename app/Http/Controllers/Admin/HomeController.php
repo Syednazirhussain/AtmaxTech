@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
+use App\Models\Page;
 use App\Models\GeneralInformation;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\Controller;
@@ -95,7 +96,7 @@ class HomeController extends Controller
         $model->email = $inputs['email'];
         $model->phone = $inputs['phone'];
         $model->address = $inputs['address'];
-        
+
         if ($model->save()) {
 
             $request->session()->flash('success', 'General information successfully updated');
@@ -105,5 +106,38 @@ class HomeController extends Controller
         $request->session()->flash('error', 'General information not updated');
         return redirect()->back();
     }
+
+    public function about () {
+
+        $page = Page::where('name', 'about')->first();
+
+        return view('admin.pages.about', compact('page'));
+    }
+
+    public function about_page_update (Request $request) {
+
+        $credentials = $request->validate([
+            'content' => ['required']
+        ]);
+
+
+        $inputs = $request->except("_token");
+
+
+        $model = Page::where('name', 'about')->first();
+        $model->main_heading = $inputs['main_heading'];
+        $model->sub_heading = $inputs['sub_heading'];
+        $model->content = $inputs['content'];
+
+        if ($model->save()) {
+
+            $request->session()->flash('success', 'About page successfully updated');
+            return redirect()->back();
+        }
+
+        $request->session()->flash('error', 'About page not updated');
+        return redirect()->back();
+    }
+
 
 }

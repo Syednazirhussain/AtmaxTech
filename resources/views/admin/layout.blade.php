@@ -90,9 +90,9 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="javascript:void(0);" class="nav-link">
+                <a href="{{ route('admin.page.about') }}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Services</p>
+                  <p>About</p>
                 </a>
               </li>
             </ul>

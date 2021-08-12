@@ -7,12 +7,12 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">General Information</h1>
+            <h1 class="m-0">About</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="{{ route('admin.dashboard') }}">Dashboard</a></li>
-              <li class="breadcrumb-item active">General Information</li>
+              <li class="breadcrumb-item active">About</li>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
@@ -28,30 +28,25 @@
             @include('session_messages')
             <div class="card card-primary">
               <div class="card-header">
-                <h3 class="card-title">General Information</h3>
+                <h3 class="card-title">About</h3>
               </div>
-              <form action="{{ route('admin.page.general_information.update') }}" method="POST">
+              <form action="{{ route('admin.page.about.update') }}" method="POST">
                 @csrf
                 <div class="card-body">
-                  
+
                   <div class="form-group">
-                    <label>Site Name</label>
-                    <input type="text" class="form-control" name="site_name" value="{{ $general_information->site_name }}" readonly="true">
+                    <label for="main_heading">Main Heading</label>
+                    <input type="text" id="main_heading" class="form-control" name="main_heading" value="{{ $page->main_heading }}">
                   </div>
 
                   <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="text" id="email" class="form-control" name="email" value="{{ $general_information->email }}">
+                    <label for="sub_heading">Sub Heading</label>
+                    <input type="text" id="sub_heading" class="form-control" name="sub_heading" value="{{ $page->sub_heading }}">
                   </div>
 
                   <div class="form-group">
-                    <label for="phone">Phone</label>
-                    <input type="text" id="phone" class="form-control" name="phone" value="{{ $general_information->phone }}">
-                  </div>
-
-                  <div class="form-group">
-                    <label for="address">Address</label>
-                    <textarea class="form-control" id="address" name="address" rows="3">{{ $general_information->address }}</textarea>
+                    <label for="content">Content</label>
+                    <textarea class="form-control" id="content" name="content" rows="3" spellcheck="false" style="margin-top: 0px; margin-bottom: 0px; height: 227px;">{{ $page->content }}</textarea>
                   </div>
 
                 </div>
