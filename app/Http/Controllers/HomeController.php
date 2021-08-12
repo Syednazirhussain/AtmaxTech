@@ -5,11 +5,31 @@ namespace App\Http\Controllers;
 use Mail;
 use Exception;
 use Validator;
+use App\Models\Page;
 use App\Mail\ContactUs;
 use Illuminate\Http\Request;
+use App\Models\GeneralInformation;
 
 class HomeController extends Controller
 {
+
+    public function index () {
+
+        $general_information = GeneralInformation::where('site_name', config('app.name'))
+                                                    ->first();
+
+        $page = Page::where('name', 'about')->first();
+
+        $data = [
+            'page'  => $page,
+            'general_information'   => $general_information
+        ];
+
+        // dd($data);
+
+        return view('index', $data);
+    }
+
 	public function contact (Request $request) {
 
         try {

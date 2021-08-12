@@ -14,8 +14,7 @@ class CreatePageTable extends Migration
     public function up()
     {
         Schema::create('page', function (Blueprint $table) {
-            $table->integer('id', true);
-            $table->string('name', 45)->unique('name_UNIQUE');
+            $table->string('name', 45)->primary();
             $table->string('main_heading', 45)->nullable();
             $table->string('sub_heading', 45)->nullable();
             $table->longText('content');

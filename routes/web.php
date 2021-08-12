@@ -22,5 +22,6 @@ use App\Http\Controllers\HomeController;
 Route::view('/test', 'test');
 Route::post('/test', [HomeController::class, 'test'])->name('test');
 
-Route::view('/', 'index');
+
+Route::get('/', [HomeController::class, 'index'])->name('index');
 Route::post('/contact', [HomeController::class, 'contact'])->name('contact');

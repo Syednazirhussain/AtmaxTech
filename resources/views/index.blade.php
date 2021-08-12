@@ -32,6 +32,7 @@
         <!-- Hero end-->
 
         <!-- About-->
+        {{-- 
         <section class="module divider-bottom" id="about">
             <div class="container">
                 <div class="row">
@@ -107,6 +108,7 @@
                 </div>
             </div>
         </section>
+         --}}
         <!-- About end-->
 
         <!-- Portfolio-->
@@ -562,12 +564,12 @@
                                 </div>
                                 <div class="textwidget">
                                     <p>
-                                        We’re a human-centered digital platform and software engineering company. We’re based in Silicon Valley with design and build centers around the globe. We empower companies in the travel, retail, insurance, and tech verticals to use the cloud, AI, and emerging technologies to create extensible platforms that leverage data and delight users.
+                                        {{ $page->content }}
                                     </p>
                                     <p>
-                                        Location: Florida, USA<br>
-                                        E-mail: support@atmax.com<br>
-                                        Phone: 754-207-4606<br>
+                                        Location: {{ $general_information->address }}<br>
+                                        E-mail: {{ $general_information->email }}<br>
+                                        Phone: {{ $general_information->phone }}<br>
                                     </p>
                                 </div>
                             </aside>

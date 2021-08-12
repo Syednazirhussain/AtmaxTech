@@ -21,7 +21,6 @@ class PageTableSeeder extends Seeder
         \DB::table('page')->insert(array (
             0 => 
             array (
-                'id' => 1,
                 'name' => 'about',
                 'main_heading' => NULL,
                 'sub_heading' => NULL,
