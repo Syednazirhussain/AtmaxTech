@@ -24,6 +24,9 @@ Route::group(['prefix' => 'admin'], function () {
 
 		Route::get('/dashboard', [HomeController::class, 'dashboard'])->name('admin.dashboard');
 		Route::post('/logout', [HomeController::class, 'logout'])->name('admin.logout');
+		
+		Route::get('/general_information', [HomeController::class, 'general_information'])->name('admin.page.general_information');
+		Route::post('/general_information', [HomeController::class, 'general_information_update'])->name('admin.page.general_information.update');
 	});
 
 });
