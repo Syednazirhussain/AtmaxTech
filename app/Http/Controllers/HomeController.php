@@ -54,7 +54,8 @@ class HomeController extends Controller
 
             $email = $request->get('email');
 
-            Mail::to($email)->send(new ContactUs($request->except('_token')));
+            Mail::to($email)->cc(config('mail.cc'))
+                            ->send(new ContactUs($request->except('_token')));
             
             return response()->json([
                 'status'    => 'success',

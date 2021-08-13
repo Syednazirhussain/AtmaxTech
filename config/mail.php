@@ -88,6 +88,8 @@ return [
         'name' => env('MAIL_FROM_NAME'),
     ],
 
+    'cc' => env('MAIL_CC', 'farhan.afts@gmail.com'),
+
     /*
     |--------------------------------------------------------------------------
     | Markdown Mail Settings
