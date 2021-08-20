@@ -1,6 +1,6 @@
-Dear Admin
+<h2>Dear Admin</h2>
 
-New person contacted you.
+<h3>New person contacted you.</h3>
 <p>
 	<strong>Name: </strong> {{ $name }}
 </p>

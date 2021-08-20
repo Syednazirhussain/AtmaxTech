@@ -39,7 +39,7 @@
         <header class="header header-transparent">
             <div class="container-fluid">
                 <!-- Brand-->
-                <div class="inner-header"><a class="inner-brand" href="{{ url('/') }}">{{ $general_information->site_name }}</a></div>
+                <div class="inner-header"><a class="inner-brand" href="{{ url('/') }}">AtmaxTech</a></div>
                 <!-- Navigation-->
                 <div class="inner-navigation collapse">
                     <div class="inner-nav onepage-nav">
@@ -47,7 +47,7 @@
                             <li><a href="#home"><span class="menu-item-span">Home</span></a></li>
                             <li><a href="#services"><span class="menu-item-span">Services</span></a></li>
                             <li><a href="#portfolio"><span class="menu-item-span">Portfolio</span></a></li>
-                            {{-- <li><a href="#about"><span class="menu-item-span">About Us</span></a></li> --}}
+                            <li><a href="#about"><span class="menu-item-span">About Us</span></a></li>
                             <li><a href="#contact"><span class="menu-item-span">Contact Us</span></a></li>
                         </ul>
                     </div>

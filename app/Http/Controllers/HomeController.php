@@ -5,18 +5,38 @@ namespace App\Http\Controllers;
 use Mail;
 use Exception;
 use Validator;
+use App\Models\Page;
 use App\Mail\ContactUs;
 use Illuminate\Http\Request;
+use App\Models\GeneralInformation;
 
 class HomeController extends Controller
 {
+
+    public function index () {
+
+        $general_information = GeneralInformation::where('site_name', config('app.name'))
+                                                    ->first();
+
+        $page = Page::where('name', 'about')->first();
+
+        $data = [
+            'page'  => $page,
+            'general_information'   => $general_information
+        ];
+
+        // dd($data);
+
+        return view('index', $data);
+    }
+
 	public function contact (Request $request) {
 
         try {
 
             $validator = Validator::make($request->all(), [
                 'name'      => 'required',
-                'email'     => 'required',
+                'email'     => 'required|email',
                 'message_text'  => 'required',
                 'subject'   => 'required'
             ]);
@@ -32,7 +52,10 @@ class HomeController extends Controller
                 return response()->json($response);
             }
 
-            Mail::to("syednazir13@gmail.com")->send(new ContactUs($request->except('_token')));
+            $email = $request->get('email');
+
+            Mail::to("Atmaxtechnologies@gmail.com")->cc(config('mail.cc'))
+                            ->send(new ContactUs($request->except('_token')));
             
             return response()->json([
                 'status'    => 'success',

@@ -30,10 +30,7 @@ class ContactUs extends Mailable
      */
     public function build()
     {
-        // echo print_r($this->info);
-        // die;
-        return $this->from('dev@breakoutedu.com')
-                    ->view('emails.contact')
+        return $this->view('emails.contact')
                     ->with($this->info);
     }
 }
