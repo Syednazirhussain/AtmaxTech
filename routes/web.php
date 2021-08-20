@@ -24,6 +24,3 @@ Route::view('/service', 'service')->name('service');
 
 Route::view('/contact', 'contact')->name('contact');
 Route::post('/contact', [HomeController::class, 'contact'])->name('contact_us');
-
-
-

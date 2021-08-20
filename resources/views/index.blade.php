@@ -3,353 +3,593 @@
 
 @section('content')
 
-	<!-- Slider Start -->
-	<section class="slider">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-9 col-md-10">
-					<div class="block">
-						<span class="d-block mb-3 text-white text-capitalize">Prepare for new future</span>
-						<h1 class="animated fadeInUp mb-5">Our work is <br>presentation of our <br>capabilities.</h1>
-						<a href="javascript:void(0);"  class="btn btn-main animated fadeInUp btn-round-full" aria-label="Get started">Get started<i class="btn-icon fa fa-angle-right ml-2"></i></a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- Section Intro Start -->
+    <!-- Wrapper-->
+    <div class="wrapper">
+        <!-- Hero-->
+        <section class="module-cover-slides" id="home" data-module-cover-slides-options="{&quot;animation&quot;: &quot;fade&quot;, &quot;play&quot;: 5000}">
+            <ul class="slides-container">
+                <li class="parallax text-center" data-overlay="0.5"><img src="{{ asset('assets/images/module-4.jpg') }}" alt="">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h1 class="m-b-20"><strong>Build Innovative Web and Mobile Applications</strong></h1>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="parallax text-center" data-overlay="0.5"><img src="{{ asset('assets/images/module-21.jpg') }}" alt="">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h1 class="m-b-20"><strong>Custom Softwares and SaaS Products</strong></h1>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="slides-navigation"><a class="prev" href="javascript:void(0);"><span class="ti-angle-left"></span></a><a class="next" href="javascript:void(0);"><span class="ti-angle-right"></span></a></div>
+        </section>
+        <!-- Hero end-->
 
-	<section class="section intro">
-		<div class="container">
-			<div class="row ">
-				<div class="col-lg-8">
-					<div class="section-title">
-						<span class="h6 text-color ">We are creative & expert people</span>
-						<h2 class="mt-3 content-title">We work with business & provide solution to client with their business problem
-						</h2>
-					</div>
-				</div>
-			</div>
-			<div class="row justify-content-center">
-				<div class="col-lg-4 col-md-6 col-12">
-					<div class="intro-item mb-5 mb-lg-0">
-						<i class="ti-desktop color-one"></i>
-						<h4 class="mt-4 mb-3">Modern & Responsive design</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, ducimus.</p>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6">
-					<div class="intro-item mb-5 mb-lg-0">
-						<i class="ti-medall color-one"></i>
-						<h4 class="mt-4 mb-3">Awarded licensed company</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, ducimus.</p>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-12">
-					<div class="intro-item">
-						<i class="ti-layers-alt color-one"></i>
-						<h4 class="mt-4 mb-3">Build your website Professionally</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, ducimus.</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+        <!-- About-->
+        {{-- 
+        <section class="module divider-bottom" id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 m-auto text-center">
+                        <h1>Your Site, Your Way.</h1>
+                        <p class="lead">See how your users experience your website in realtime or view trends to see any changes in performance over time.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="space" data-MY="60px"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p><img src="{{ asset('assets/images/main/mega-mockup.png') }}" alt=""></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="space" data-mY="30px"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="icon-box text-center">
+                            <div class="icon-box-icon"><span class="ti-layout"></span></div>
+                            <div class="icon-box-title">
+                                <h6>Visual Composer</h6>
+                            </div>
+                            <div class="icon-box-content">
+                                <p>Lorem ipsum dolor sit amet consectetuer adipiscing elit sed diam lorem ipsum amet.</p>
+                            </div>
+                            <div class="icon-box-link"><a href="javascript:void(0);">Read more</a></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="icon-box text-center">
+                            <div class="icon-box-icon"><span class="ti-cup"></span></div>
+                            <div class="icon-box-title">
+                                <h6>Revolution Slider</h6>
+                            </div>
+                            <div class="icon-box-content">
+                                <p>Lorem ipsum dolor sit amet consectetuer adipiscing elit sed diam lorem ipsum amet.</p>
+                            </div>
+                            <div class="icon-box-link"><a href="javascript:void(0);">Read more</a></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="icon-box text-center">
+                            <div class="icon-box-icon"><span class="ti-harddrives"></span></div>
+                            <div class="icon-box-title">
+                                <h6>User Experience</h6>
+                            </div>
+                            <div class="icon-box-content">
+                                <p>Lorem ipsum dolor sit amet consectetuer adipiscing elit sed diam lorem ipsum amet.</p>
+                            </div>
+                            <div class="icon-box-link"><a href="javascript:void(0);">Read more</a></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="icon-box text-center">
+                            <div class="icon-box-icon"><span class="ti-desktop"></span></div>
+                            <div class="icon-box-title">
+                                <h6>Fully Responsive</h6>
+                            </div>
+                            <div class="icon-box-content">
+                                <p>Lorem ipsum dolor sit amet consectetuer adipiscing elit sed diam lorem ipsum amet.</p>
+                            </div>
+                            <div class="icon-box-link"><a href="javascript:void(0);">Read more</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+         --}}
+        <!-- About end-->
 
-	<!-- Section Intro END -->
-	<!-- Section About Start -->
+        <!-- Portfolio-->
+        <section class="module p-b-0" id="portfolio">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 m-auto text-center">
+                        <h1>Digital Design.</h1>
+                        <p class="lead">See how your users experience your website in realtime or view trends to see any changes in performance over time.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="space" data-MY="40px"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <ul class="filters serif">
+                            <li><a class="current" href="javascript:void(0);" data-filter="*">All</a></li>
+                            <li><a href="javascript:void(0);" data-filter=".branding">Branding</a></li>
+                            <li><a href="javascript:void(0);" data-filter=".digital">Digital</a></li>
+                            <li><a href="javascript:void(0);" data-filter=".packaging">Packaging</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row row-portfolio" data-columns="3">
+                    <div class="grid-sizer"></div>
+                    <div class="portfolio-item branding">
+                        <div class="portfolio-item-wrapper">
+                            <div class="portfolio-item-img"><img src="{{ asset('assets/images/portfolio/1.jpg') }}" alt=""></div>
+                            <div class="portfolio-item-caption">
+                                <h6 class="portfolio-item-title">Solave Cleanser</h6>
+                                <span class="portfolio-item-subtitle serif">
+                                    A Forbes survey tells that 80% of all grownups own a smartphone. It adds that 75% of smartphone users are accessing mobile internet services. These statistics emphasize the fact that if your business isn’t ready for mobile device users, you’re missing out on a huge opportunity to reach your target audience and increase revenue. We at Atmax help make your business mobile-ready, starting from devising mobile strategy to development, testing, and deployment.
+                                </span>
+                            </div><a class="portfolio-item-link" href="portfolio-single-1.html"></a>
+                        </div>
+                    </div>
+                    <div class="portfolio-item digital">
+                        <div class="portfolio-item-wrapper">
+                            <div class="portfolio-item-img"><img src="{{ asset('assets/images/portfolio/4.jpg') }}" alt=""></div>
+                            <div class="portfolio-item-caption">
+                                <h6 class="portfolio-item-title">Monochrome</h6><span class="portfolio-item-subtitle serif">Branding</span>
+                            </div><a class="portfolio-item-link" href="portfolio-single-1.html"></a>
+                        </div>
+                    </div>
+                    <div class="portfolio-item packaging">
+                        <div class="portfolio-item-wrapper">
+                            <div class="portfolio-item-img"><img src="{{ asset('assets/images/portfolio/3.jpg') }}" alt=""></div>
+                            <div class="portfolio-item-caption">
+                                <h6 class="portfolio-item-title">Ellie Cashman</h6><span class="portfolio-item-subtitle serif">Packaging</span>
+                            </div><a class="portfolio-item-link" href="portfolio-single-1.html"></a>
+                        </div>
+                    </div>
+                    <div class="portfolio-item branding">
+                        <div class="portfolio-item-wrapper">
+                            <div class="portfolio-item-img"><img src="{{ asset('assets/images/portfolio/6.jpg') }}" alt=""></div>
+                            <div class="portfolio-item-caption">
+                                <h6 class="portfolio-item-title">White Sleeve</h6><span class="portfolio-item-subtitle serif">Digital</span>
+                            </div><a class="portfolio-item-link" href="portfolio-single-1.html"></a>
+                        </div>
+                    </div>
+                    <div class="portfolio-item digital">
+                        <div class="portfolio-item-wrapper">
+                            <div class="portfolio-item-img"><img src="{{ asset('assets/images/portfolio/5.jpg') }}" alt=""></div>
+                            <div class="portfolio-item-caption">
+                                <h6 class="portfolio-item-title">Classic Socks</h6><span class="portfolio-item-subtitle serif">Branding</span>
+                            </div><a class="portfolio-item-link" href="portfolio-single-1.html"></a>
+                        </div>
+                    </div>
+                    <div class="portfolio-item packaging">
+                        <div class="portfolio-item-wrapper">
+                            <div class="portfolio-item-img"><img src="{{ asset('assets/images/portfolio/2.jpg') }}" alt=""></div>
+                            <div class="portfolio-item-caption">
+                                <h6 class="portfolio-item-title">Expirience</h6><span class="portfolio-item-subtitle serif">Packaging</span>
+                            </div><a class="portfolio-item-link" href="portfolio-single-1.html"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Portfolio end-->
 
-	<section class="section about position-relative">
-		<div class="bg-about"></div>
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-6 offset-lg-6 offset-md-0">
-					<div class="about-item ">
-						<span class="h6 text-color">What we are</span>
-						<h2 class="mt-3 mb-4 position-relative content-title">We are dynamic team of creative people</h2>
-						<div class="about-content">
-							<h4 class="mb-3 position-relative">We are Perfect Solution</h4>
-							<p class="mb-5">We provide consulting services in the area of IFRS and management reporting, helping
-								companies to reach their highest level. We optimize business processes, making them easier.</p>
+        <!-- Services-->
+        <section class="module" id="services">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="icon-box">
+                            <div class="icon-box-icon"><span class="ti-layout"></span></div>
+                            <div class="icon-box-title">
+                                <h6>Digital Workplace</h6>
+                            </div>
+                            <div class="icon-box-content">
+                                <p>
+                                    Atmax Tech develops and deploys solutions that let your people work from anywhere on any device. 
+                                    They can also empower your teams as they secure your people, devices, and data; cut costs; and drive 
+                                    efficiency.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="icon-box">
+                            <div class="icon-box-icon"><span class="ti-image"></span></div>
+                            <div class="icon-box-title">
+                                <h6>Cloud Services</h6>
+                            </div>
+                            <div class="icon-box-content">
+                                <p>
+                                    Atmax Tech has extensive experience in providing infrastructure services to large enterprises, including Data Center Management and Infrastructure Automation.
+                                    We partner with customers to provide Infrastructure Services such as
+                                    Cloud Readiness Assessment, Enablement & implementation
+                                    Maintaining and Optimization of Infrastructure
+                                    Orchestration, Monitoring, Virtualization, Validation.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="icon-box">
+                            <div class="icon-box-icon"><span class="ti-image"></span></div>
+                            <div class="icon-box-title">
+                                <h6>Enterprise Analytics</h6>
+                            </div>
+                            <div class="icon-box-content">
+                                <p>
+                                    Atmax has a dedicated data services team including a pool of certified big data specialists. 
+                                    We are uniquely positioned in the area of Market Survey Analysis and Research. 
+                                    We perform analytical processes on the data stored across our client’s organization, to extract 
+                                    meaningful and useful data from raw repositories.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="icon-box">
+                            <div class="icon-box-icon"><span class="ti-headphone-alt"></span></div>
+                            <div class="icon-box-title">
+                                <h6>Product Engineering</h6>
+                            </div>
+                            <div class="icon-box-content">
+                                <p>
+                                    Turning dreams into reality through coding requires a mix of art and science. 
+                                    That’s why we believe that good code is written from the heart and not just the mind. 
+                                    Every piece of code is important – imagine what would happen if bits in a string were shifted 
+                                    by one instead of two.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="icon-box">
+                            <div class="icon-box-icon"><span class="ti-desktop"></span></div>
+                            <div class="icon-box-title">
+                                <h6>Mobile Computing</h6>
+                            </div>
+                            <div class="icon-box-content">
+                                <p>
+                                    A Forbes survey tells that 80% of all grownups own a smartphone. It adds that 75% of 
+                                    smartphone users are accessing mobile internet services. These statistics emphasize the 
+                                    fact that if your business isn’t ready for mobile device users, you’re missing out on a 
+                                    huge opportunity to reach your target audience and increase revenue. We at Atmax help make 
+                                    your business mobile-ready, starting from devising mobile strategy to development, testing, 
+                                    and deployment.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Services end-->
 
-							<a href="javascript:void(0);" class="btn btn-main btn-round-full">Get started</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+        <!-- Alt Services-->
+        <section class="module bg-gray">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6"><img src="{{ asset('assets/images/main/ipad.png') }}" alt=""></div>
+                    <div class="col-lg-5 offset-lg-1">
+                        <h2>Flexible & Lightweight.</h2>
+                        <p class="lead">Map where your photos were taken and discover local points of interest. Map where your photos. Map where your photos were taken and discover.</p>
+                        <div class="space" data-MY="50px"></div>
+                        <div class="icon-box icon-box-left">
+                            <div class="icon-box-icon"><span class="ti-layout"></span></div>
+                            <div class="icon-box-title">
+                                <h6>Visual Composer</h6>
+                            </div>
+                            <div class="icon-box-content">
+                                <p>Map where your photos were taken and discover local points of interest. Map where your photos. Map where your photos were taken and discover.</p>
+                            </div>
+                        </div>
+                        <div class="icon-box icon-box-left">
+                            <div class="icon-box-icon"><span class="ti-cup"></span></div>
+                            <div class="icon-box-title">
+                                <h6>Revolution Slider</h6>
+                            </div>
+                            <div class="icon-box-content">
+                                <p>Map where your photos were taken and discover local points of interest. Map where your photos. Map where your photos were taken and discover.</p>
+                            </div>
+                        </div>
+                        <div class="icon-box icon-box-left">
+                            <div class="icon-box-icon"><span class="ti-harddrives"></span></div>
+                            <div class="icon-box-title">
+                                <h6>User Experience</h6>
+                            </div>
+                            <div class="icon-box-content">
+                                <p>Map where your photos were taken and discover local points of interest. Map where your photos. Map where your photos were taken and discover.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Alt Services end-->
 
-	<!-- Section About End -->
-	<!-- section Counter Start -->
-	<section class="section counter">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-3 col-md-6 col-sm-6">
-					<div class="counter-item text-center mb-5 mb-lg-0">
-						<h3 class="mb-0"><span class="counter-stat font-weight-bold">1730</span> +</h3>
-						<p class="text-muted">Project Done</p>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-6 col-sm-6">
-					<div class="counter-item text-center mb-5 mb-lg-0">
-						<h3 class="mb-0"><span class="counter-stat font-weight-bold">125 </span>M </h3>
-						<p class="text-muted">User Worldwide</p>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-6 col-sm-6">
-					<div class="counter-item text-center mb-5 mb-lg-0">
-						<h3 class="mb-0"><span class="counter-stat font-weight-bold">39</span></h3>
-						<p class="text-muted">Availble Country</p>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-6 col-sm-6">
-					<div class="counter-item text-center">
-						<h3 class="mb-0"><span class="counter-stat font-weight-bold">14</span></h3>
-						<p class="text-muted">Award Winner </p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- section Counter End  -->
-	<!--  Section Services Start -->
-	<section class="section service border-top">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-lg-7 text-center">
-					<div class="section-title">
-						<span class="h6 text-color">Our Services</span>
-						<h2 class="mt-3 content-title ">We provide a wide range of creative services </h2>
-					</div>
-				</div>
-			</div>
+        <!-- Testimonials-->
+        <section class="module parallax" data-background="{{ asset('assets/images/module-3.jpg') }}" data-overlay="0.5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="space" data-MY="50px"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="review-slides owl-carousel">
+                            <div class="review">
+                                <div class="review-icons"><img src="{{ asset('assets/images/avatar/1.jpg') }}" alt="">
+                                </div>
+                                <div class="review-content">
+                                    <blockquote>
+                                        <p>I don't work from drawings. I don't make sketches and drawings <br/> and color sketches into a final painting.</p>
+                                        <footer class="blockquote-footer">Albert Einstein</footer>
+                                    </blockquote>
+                                </div>
+                            </div>
+                            <div class="review">
+                                <div class="review-icons"><img src="{{ asset('assets/images/avatar/1.jpg') }}" alt="">
+                                </div>
+                                <div class="review-content">
+                                    <blockquote>
+                                        <p>To be yourself in a world that is constantly trying to make you <br/> something else is the greatest accomplishment.</p>
+                                        <footer class="blockquote-footer">Ralph Waldo Emerson</footer>
+                                    </blockquote>
+                                </div>
+                            </div>
+                            <div class="review">
+                                <div class="review-icons"><img src="{{ asset('assets/images/avatar/1.jpg') }}" alt="">
+                                </div>
+                                <div class="review-content">
+                                    <blockquote>
+                                        <p>Imperfection is beauty, madness is genius and it's better to be <br/> absolutely ridiculous than absolutely boring.</p>
+                                        <footer class="blockquote-footer">Marilyn Monroe</footer>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="space" data-MY="50px"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Testimonials end-->
 
-			<div class="row justify-content-center">
-				<div class="col-lg-4 col-md-6 col-sm-6">
-					<div class="service-item mb-5">
-						<i class="ti-desktop"></i>
-						<h4 class="mb-3">Web development.</h4>
-						<p>A digital agency isn't here to replace your internal team, we're here to partner</p>
-					</div>
-				</div>
+        <!-- Clients-->
+        <section class="module bg-gray p-t-0 p-b-40">
+            <div class="container">
+                <div class="space" data-MY="-60px"></div>
+                <div class="row">
+                    <div class="col-md-4 pricing-wrapper">
+                        <div class="pricing-header">
+                            <div class="pricing-icon"><i class="ti-slice"></i></div>
+                            <div class="pricing-title">Starter</div>
+                        </div>
+                        <div class="pricing-price">Free
+                        </div>
+                        <div class="pricing-body">
+                            <p>Map where your photos<br>were taken and discover local<br>points of interest.</p>
+                        </div>
+                        <div class="pricing-footer"><a class="btn btn-circle btn-brand" href="javascript:void(0);">Download</a></div>
+                    </div>
+                    <div class="col-md-4 pricing-wrapper pricing-popular">
+                        <div class="pricing-header">
+                            <div class="pricing-icon"><i class="ti-pin-alt"></i></div>
+                            <div class="pricing-title">Standard</div>
+                        </div>
+                        <div class="pricing-price"><span>$</span>45
+                        </div>
+                        <div class="pricing-body">
+                            <p>Map where your photos<br>were taken and discover local<br>points of interest.</p>
+                        </div>
+                        <div class="pricing-footer"><a class="btn btn-circle btn-brand" href="javascript:void(0);">Download</a></div>
+                    </div>
+                    <div class="col-md-4 pricing-wrapper pricing-popular">
+                        <div class="pricing-header">
+                            <div class="pricing-icon"><i class="ti-marker-alt"></i></div>
+                            <div class="pricing-title">Professional</div>
+                        </div>
+                        <div class="pricing-price"><span>$</span>69
+                        </div>
+                        <div class="pricing-body">
+                            <p>Map where your photos<br>were taken and discover local<br>points of interest.</p>
+                        </div>
+                        <div class="pricing-footer"><a class="btn btn-circle btn-brand" href="javascript:void(0);">Download</a></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-10 m-auto">
+                        <div class="owl-carousel clients-carousel">
+                            <div class="client"><img src="{{ asset('assets/images/clients/1.png') }}" alt=""></div>
+                            <div class="client"><img src="{{ asset('assets/images/clients/2.png') }}" alt=""></div>
+                            <div class="client"><img src="{{ asset('assets/images/clients/3.png') }}" alt=""></div>
+                            <div class="client"><img src="{{ asset('assets/images/clients/4.png') }}" alt=""></div>
+                            <div class="client"><img src="{{ asset('assets/images/clients/5.png') }}" alt=""></div>
+                            <div class="client"><img src="{{ asset('assets/images/clients/6.png') }}" alt=""></div>
+                            <div class="client"><img src="{{ asset('assets/images/clients/7.png') }}" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Clients end-->
 
-				<div class="col-lg-4 col-md-6 col-sm-6">
-					<div class="service-item mb-5">
-						<i class="ti-layers"></i>
-						<h4 class="mb-3">Interface Design.</h4>
-						<p>A digital agency isn't here to replace your internal team, we're here to partner</p>
-					</div>
-				</div>
+        <!-- Form-->
+        <section class="module divider-top" id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-9 m-auto text-center">
+                        <h1>Let's talk.</h1>
+                        <p class="lead">See how your users experience your website in realtime or view trends to see any changes in performance over time.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="space" data-MY="60px"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8 m-auto">
+                        <form id="contact_us" method="post" novalidate>
 
-				<div class="col-lg-4 col-md-6 col-sm-6">
-					<div class="service-item mb-5">
-						<i class="ti-bar-chart"></i>
-						<h4 class="mb-3">Business Consulting.</h4>
-						<p>A digital agency isn't here to replace your internal team, we're here to partner</p>
-					</div>
-				</div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input class="form-control" type="text" name="name" placeholder="Name" required="">
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input class="form-control" type="email" name="email" placeholder="E-mail" required="">
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <input class="form-control" type="text" name="subject" placeholder="Subject" required="">
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <textarea class="form-control" name="message_text" placeholder="Message" rows="12" required=""></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <p>
+                                        <input id="send_message" class="btn btn-block btn-brand" type="submit" value="Send Message">
+                                    </p>
+                                </div>
+                            </div>
+                        </form>
+                        <!-- Ajax response-->
+                        <div class="ajax-response text-center" id="contact-response"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Form end-->
 
-				<div class="col-lg-4 col-md-6 col-sm-6">
-					<div class="service-item mb-5 mb-lg-0">
-						<i class="ti-vector"></i>
-						<h4 class="mb-3">Branding.</h4>
-						<p>A digital agency isn't here to replace your internal team, we're here to partner</p>
-					</div>
-				</div>
+        <!-- Counters-->
+        <section class="module bg-gray p-b-0">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="counter">
+                            <div class="counter-icon"><span class="icon-energy icons"></span></div>
+                            <div class="counter-number">
+                                <h6><strong class="counter-timer" data-from="0" data-to="1538">0</strong></h6>
+                            </div>
+                            <div class="counter-title">Happy Clients</div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="counter">
+                            <div class="counter-icon"><span class="icon-game-controller icons"></span></div>
+                            <div class="counter-number">
+                                <h6><strong class="counter-timer" data-from="0" data-to="2124">0</strong></h6>
+                            </div>
+                            <div class="counter-title">Total downloads</div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="counter">
+                            <div class="counter-icon"><span class="icon-fire icons"></span></div>
+                            <div class="counter-number">
+                                <h6><strong class="counter-timer" data-from="0" data-to="3128">0</strong></h6>
+                            </div>
+                            <div class="counter-title">Awards Won</div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="counter">
+                            <div class="counter-icon"><span class="icon-diamond icons"></span></div>
+                            <div class="counter-number">
+                                <h6><strong class="counter-timer" data-from="0" data-to="9534">0</strong></h6>
+                            </div>
+                            <div class="counter-title">Theme Users</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Counters end-->
 
-				<div class="col-lg-4 col-md-6 col-sm-6">
-					<div class="service-item mb-5 mb-lg-0">
-						<i class="ti-android"></i>
-						<h4 class="mb-3">App development.</h4>
-						<p>A digital agency isn't here to replace your internal team, we're here to partner</p>
-					</div>
-				</div>
+        <!-- Image-->
+        <section class="module no-gutters p-0">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12"><img src="{{ asset('assets/images/module-18.jpg') }}" alt=""></div>
+                </div>
+            </div>
+        </section>
+        <!-- Image end-->
 
-				<div class="col-lg-4 col-md-6 col-sm-6">
-					<div class="service-item mb-5 mb-lg-0">
-						<i class="ti-pencil-alt"></i>
-						<h4 class="mb-3">Content creation.</h4>
-						<p>A digital agency isn't here to replace your internal team, we're here to partner</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!--  Section Services End -->
-
-	<!-- Section Cta Start -->
-	<section class="section cta">
-		<div class="container">
-			<div class="row">
-				<div class="col-xl-5 col-lg-6">
-					<div class="cta-item  bg-white p-5 rounded">
-						<span class="h6 text-color">We create for you</span>
-						<h2 class="mt-2 mb-4">Entrust Your Project to Our Best Team of Professionals</h2>
-						<p class="lead mb-4">Have any project on mind? For immidiate support :</p>
-						<h3><i class="ti-mobile mr-3 text-color"></i>+23 876 65 455</h3>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!--  Section Cta End-->
-	<!-- Section Testimonial Start -->
-	<section class="section testimonial">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-7 ">
-					<div class="section-title">
-						<span class="h6 text-color">Clients testimonial</span>
-						<h2 class="mt-3 content-title">Check what's our clients say about us</h2>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="container">
-			<div class="row testimonial-wrap">
-				<div class="testimonial-item position-relative">
-					<i class="ti-quote-left text-color"></i>
-
-					<div class="testimonial-item-content">
-						<p class="testimonial-text">Quam maiores perspiciatis temporibus odio reiciendis error alias debitis atque
-							consequuntur natus iusto recusandae numquam corrupti facilis blanditiis.</p>
-
-						<div class="testimonial-author">
-							<h5 class="mb-0 text-capitalize">Thomas Johnson</h5>
-							<p>Excutive Director,themefisher</p>
-						</div>
-					</div>
-				</div>
-				<div class="testimonial-item position-relative">
-					<i class="ti-quote-left text-color"></i>
-
-					<div class="testimonial-item-content">
-						<p class="testimonial-text">Consectetur adipisicing elit. Quam maiores perspiciatis temporibus odio reiciendis
-							error alias debitis atque consequuntur natus iusto recusandae .</p>
-
-						<div class="testimonial-author">
-							<h5 class="mb-0 text-capitalize">Mickel hussy</h5>
-							<p>Excutive Director,themefisher</p>
-						</div>
-					</div>
-				</div>
-				<div class="testimonial-item position-relative">
-					<i class="ti-quote-left text-color"></i>
-
-					<div class="testimonial-item-content">
-						<p class="testimonial-text">Quam maiores perspiciatis temporibus odio reiciendis error alias debitis atque
-							consequuntur natus iusto recusandae numquam corrupti.</p>
-
-						<div class="testimonial-author">
-							<h5 class="mb-0 text-capitalize">James Watson</h5>
-							<p>Excutive Director,themefisher</p>
-						</div>
-					</div>
-				</div>
-				<div class="testimonial-item position-relative">
-					<i class="ti-quote-left text-color"></i>
-
-					<div class="testimonial-item-content">
-						<p class="testimonial-text">Consectetur adipisicing elit. Quam maiores perspiciatis temporibus odio reiciendis
-							error alias debitis atque consequuntur natus iusto recusandae .</p>
-
-						<div class="testimonial-author">
-							<h5 class="mb-0 text-capitalize">Mickel hussy</h5>
-							<p>Excutive Director,themefisher</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- Section Testimonial End -->
-	<section class="section latest-blog bg-2">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-lg-7 text-center">
-					<div class="section-title">
-						<span class="h6 text-color">Latest News</span>
-						<h2 class="mt-3 content-title text-white">Latest articles to enrich knowledge</h2>
-					</div>
-				</div>
-			</div>
-
-			<div class="row justify-content-center">
-				<div class="col-lg-4 col-md-6 mb-5">
-					<div class="card bg-transparent border-0">
-						<img loading="lazy" src="{{ asset('MegaKit/images/blog/1.jpg') }}" alt="blog" class="img-fluid rounded">
-
-						<div class="card-body mt-2">
-							<div class="blog-item-meta">
-								<a href="javascript:void(0);" class="text-white-50">Design<span class="ml-2 mr-2">/</span></a>
-								<a href="javascript:void(0);" class="text-white-50">Ui/Ux<span class="ml-2">/</span></a>
-								<a href="javascript:void(0);" class="text-white-50 ml-2"><i class="fa fa-user mr-2"></i>admin</a>
-							</div>
-
-							<h3 class="mt-3 mb-5 lh-36"><a href="javascript:void(0);" class="text-white ">How to improve design with typography?</a></h3>
-
-							<a href="blog-single.html" class="btn btn-small btn-solid-border btn-round-full text-white">Learn More</a>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-lg-4 col-md-6 mb-5">
-					<div class="card border-0 bg-transparent">
-						<img loading="lazy" src="{{ asset('MegaKit/images/blog/2.jpg') }}" alt="blog" class="img-fluid rounded">
-
-						<div class="card-body mt-2">
-							<div class="blog-item-meta">
-								<a href="javascript:void(0);" class="text-white-50">Design<span class="ml-2 mr-2">/</span></a>
-								<a href="javascript:void(0);" class="text-white-50">Ui/Ux<span class="ml-2">/</span></a>
-								<a href="javascript:void(0);" class="text-white-50 ml-2"><i class="fa fa-user mr-2"></i>admin</a>
-							</div>
-
-							<h3 class="mt-3 mb-5 lh-36"><a href="javascript:void(0);" class="text-white">Interactivity design may connect consumer</a>
-							</h3>
-
-							<a href="blog-single.html" class="btn btn-small btn-solid-border btn-round-full text-white">Learn More</a>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-lg-4 col-md-6 mb-5">
-					<div class="card border-0 bg-transparent">
-						<img loading="lazy" src="{{ asset('MegaKit/images/blog/3.jpg') }}" alt="blog" class="img-fluid rounded">
-
-						<div class="card-body mt-2">
-							<div class="blog-item-meta">
-								<a href="javascript:void(0);" class="text-white-50">Design<span class="ml-2 mr-2">/</span></a>
-								<a href="javascript:void(0);" class="text-white-50">Ui/Ux<span class="ml-2">/</span></a>
-								<a href="javascript:void(0);" class="text-white-50 ml-2"><i class="fa fa-user mr-2"></i>admin</a>
-							</div>
-
-							<h3 class="mt-3 mb-5 lh-36"><a href="javascript:void(0);" class="text-white">Marketing Strategy to bring more affect</a></h3>
-
-							<a href="blog-single.html" class="btn btn-small btn-solid-border btn-round-full text-white">Learn More</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="mt-70 position-relative">
-		<div class="container">
-			<div class="cta-block-2 bg-gray p-5 rounded border-1">
-				<div class="row justify-content-center align-items-center ">
-					<div class="col-lg-7">
-						<span class="text-color">For Every type business</span>
-						<h2 class="mt-2 mb-4 mb-lg-0">Entrust Your Project to Our Best Team of Professionals</h2>
-					</div>
-					<div class="col-lg-4">
-						<a href="contact.html" class="btn btn-main btn-round-full float-lg-right ">Contact Us</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+        <!-- Footer-->
+        <footer class="footer">
+            <div class="footer-widgets">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <aside class="widget widget-text">
+                                <div class="widget-title">
+                                    <h6>About Us</h6>
+                                </div>
+                                <div class="textwidget">
+                                    <p>
+                                        {{ $page->content }}
+                                    </p>
+                                    <p>
+                                        Location: {{ $general_information->address }}<br>
+                                        E-mail: {{ $general_information->email }}<br>
+                                        Phone: {{ $general_information->phone }}<br>
+                                    </p>
+                                </div>
+                            </aside>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bar">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="copyright">
+                                <p>© <?php echo date('Y'); ?> <a href="{{ url('/') }}">Atmax Technologies</a>, All Rights Reserved.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
 
 @endsection
 
