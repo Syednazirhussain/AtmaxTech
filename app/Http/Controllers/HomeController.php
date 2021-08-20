@@ -38,7 +38,6 @@ class HomeController extends Controller
                 'name'      => 'required',
                 'email'     => 'required|email',
                 'message_text'  => 'required',
-                'subject'   => 'required'
             ]);
 
             if ($validator->fails()) {

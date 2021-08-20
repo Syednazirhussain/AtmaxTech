@@ -14,14 +14,16 @@ use App\Http\Controllers\HomeController;
 |
 */
 
-// Route::get('/', function () {
-
-//     return view('index');
-// });
-
-Route::view('/test', 'test');
-Route::post('/test', [HomeController::class, 'test'])->name('test');
 
 
-Route::get('/', [HomeController::class, 'index'])->name('index');
-Route::post('/contact', [HomeController::class, 'contact'])->name('contact');
+Route::view('/', 'index');
+Route::view('/about', 'about')->name('about');
+Route::view('/pricing', 'pricing')->name('pricing');
+Route::view('/project', 'project')->name('project');
+Route::view('/service', 'service')->name('service');
+
+Route::view('/contact', 'contact')->name('contact');
+Route::post('/contact', [HomeController::class, 'contact'])->name('contact_us');
+
+
+
