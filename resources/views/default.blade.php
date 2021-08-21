@@ -173,7 +173,7 @@
       <div class="col-lg-3 col-sm-6">
         <div class="widget">
           <div class="logo mb-4">
-            <h3>U.S.<span>&nbsp;Claim Services</span></h3>
+            <h3>Atmax<span>Tech</span></h3>
           </div>
           <h6><a href="mailto:atmaxtechnologies@gmail.com">atmaxtechnologies@gmail.com</a></h6>
           <a href="tel:754-207-4606"><span class="text-color h4">+754-207-4606</span></a>
@@ -185,7 +185,10 @@
       <div class="row">
         <div class="col-lg-6">
           <div class="copyright">
-            Copyright &copy; {{ date('Y') }}, Designed &amp; Developed by <a href="javascript:void(0);">Syed Nazir Hussain</a>
+            Copyright &copy; {{ date('Y') }}, Designed &amp; Developed by 
+            <a href="https://my.linkedin.com/in/syed-nazir-hussain-bb4162b8" target="_blank">
+              Syed Nazir Hussain
+            </a>
           </div>
         </div>
         <div class="col-lg-6 text-left text-lg-right">
