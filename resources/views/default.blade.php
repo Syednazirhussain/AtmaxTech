@@ -8,7 +8,7 @@
 
   <!-- ** Mobile Specific Metas ** -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description" content="Agency HTML Template">
+  <meta name="description" content="AtmaxTech is a software company that offers software services all over the world. Farhan Javed is the founder.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
   <meta name="author" content="Syed Nazir Hussain">
   <meta name="csrf-token" content="{{ csrf_token() }}">
