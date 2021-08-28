@@ -16,11 +16,12 @@ use App\Http\Controllers\HomeController;
 
 
 
-Route::view('/', 'index');
-Route::view('/about', 'about')->name('about');
+Route::get('/', [HomeController::class, 'index']);
+Route::get('/about', [HomeController::class, 'about'])->name('about');
+Route::get('/contact', [HomeController::class, 'contact'])->name('contact');
+
 Route::view('/pricing', 'pricing')->name('pricing');
 Route::view('/project', 'project')->name('project');
 Route::view('/service', 'service')->name('service');
 
-Route::view('/contact', 'contact')->name('contact');
-Route::post('/contact', [HomeController::class, 'contact'])->name('contact_us');
+Route::post('/contact', [HomeController::class, 'contact_us'])->name('contact_us');

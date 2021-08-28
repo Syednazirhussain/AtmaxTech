@@ -17,20 +17,41 @@ class HomeController extends Controller
 
         $general_information = GeneralInformation::where('site_name', config('app.name'))
                                                     ->first();
-
-        $page = Page::where('name', 'about')->first();
-
         $data = [
-            'page'  => $page,
             'general_information'   => $general_information
         ];
-
-        // dd($data);
 
         return view('index', $data);
     }
 
-	public function contact (Request $request) {
+    public function about () {
+
+        $page = Page::where('name', 'about')->first();
+
+        $data = [
+            'page'   => $page
+        ];
+
+        return view('about', $data);
+    }
+
+    public function contact () {
+
+        $general_information = GeneralInformation::where('site_name', config('app.name'))
+                                                    ->first();
+
+        $page = Page::where('name', 'contact')->first();
+
+        $data = [
+            'page'   => $page,
+            'general_information'   => $general_information
+        ];
+
+        return view('contact', $data);
+    }
+
+
+	public function contact_us (Request $request) {
 
         try {
 
@@ -72,11 +93,6 @@ class HomeController extends Controller
                 'message'   => $ex->getMessage()
             ]);
         }
-	}
-
-	public function test (Request $request) {
-
-		return response()->json($request->all());
 	}
 
 }

@@ -11,7 +11,7 @@
             <span class="text-white">Contact Us</span>
             <h1 class="text-capitalize mb-4 text-lg">Get in Touch</h1>
             <ul class="list-inline">
-              <li class="list-inline-item"><a href="index.html" class="text-white">Home</a></li>
+              <li class="list-inline-item"><a href="{{ url('/') }}" class="text-white">Home</a></li>
               <li class="list-inline-item"><span class="text-white">/</span></li>
               <li class="list-inline-item text-white-50">Contact Us</li>
             </ul>
@@ -29,7 +29,6 @@
   				<h3 class="text-md mb-4">Contact Form</h3>
           <div class="text-center" id="contact-response"></div>
           <form id="contact-form" class="contact__form" method="POST" action="javascript:void(0);">
-            {{-- <input type="hidden" name="_token" value="{{ csrf_field() }}"> --}}
   					<div class="form-group">
   						<input name="name" type="text" class="form-control" placeholder="Your Name" required>
   					</div>
@@ -48,15 +47,21 @@
   					<h2 class="mb-5 mt-2">Don’t Hesitate to contact with us for any kind of information</h2>
 
   					<ul class="address-block list-unstyled">
+              @if(isset($general_information->address))
   						<li>
-  							<i class="ti-direction mr-3"></i>Florida, USA
+  							<i class="ti-direction mr-3"></i>{{ $general_information->address }}
   						</li>
+              @endif
+              @if(isset($general_information->email))
   						<li>
-  							<i class="ti-email mr-3"></i>Email: atmaxtechnologies@gmail.com
+  							<i class="ti-email mr-3"></i>Email:&nbsp;{{ $general_information->email }}
   						</li>
+              @endif
+              @if(isset($general_information->phone))
   						<li>
-  							<i class="ti-mobile mr-3"></i>Phone:+754-207-4606
+  							<i class="ti-mobile mr-3"></i>Phone:&nbsp;{{ $general_information->phone }}
   						</li>
+              @endif
   					</ul>
 
   					<ul class="social-icons list-inline mt-5">

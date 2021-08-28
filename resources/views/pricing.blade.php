@@ -19,7 +19,7 @@
             <span class="text-white">Our pricing</span>
             <h1 class="text-capitalize mb-4 text-lg">Pricing Package</h1>
             <ul class="list-inline">
-              <li class="list-inline-item"><a href="index.html" class="text-white">Home</a></li>
+              <li class="list-inline-item"><a href="{{ url('/') }}" class="text-white">Home</a></li>
               <li class="list-inline-item"><span class="text-white">/</span></li>
               <li class="list-inline-item text-white-50">Our pricing</li>
             </ul>
@@ -92,7 +92,7 @@
   							<li>- 500 Queries</li>
   							<li>- Basic Statistics</li>
   						</ul>
-  						<a href="#" class="btn btn-small btn-solid-border mt-3 btn-round-full">Download Now</a>
+  						<a href="javascript:void(0);" class="btn btn-small btn-solid-border mt-3 btn-round-full">Download Now</a>
   					</div>
   				</div>
   			</div>
@@ -111,7 +111,7 @@
   							<li>- 5000 Queries</li>
   							<li>- Standard Statistics</li>
   						</ul>
-  						<a href="#" class="btn btn-small btn-main mt-3 btn-round-full">Signup Now</a>
+  						<a href="javascript:void(0);" class="btn btn-small btn-main mt-3 btn-round-full">Signup Now</a>
   					</div>
   				</div>
   			</div>
@@ -130,7 +130,7 @@
   							<li>- Unlimited Queries</li>
   							<li>- Full Statistics</li>
   						</ul>
-  						<a href="#" class="btn btn-small btn-solid-border mt-3 btn-round-full">Download Now</a>
+  						<a href="javascript:void(0);" class="btn btn-small btn-solid-border mt-3 btn-round-full">Download Now</a>
   					</div>
   				</div>
   			</div>
@@ -145,7 +145,7 @@
   					<h2 class="mt-2 text-white">Entrust Your Project to Our Best Team of Professionals</h2>
   				</div>
   				<div class="col-lg-4 text-center text-lg-right mt-4 mt-lg-0">
-  					<a href="contact.html" class="btn btn-main btn-round-full">Contact Us</a>
+  					<a href="{{ route('contact') }}" class="btn btn-main btn-round-full">Contact Us</a>
   				</div>
   			</div>
   		</div>

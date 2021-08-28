@@ -49,8 +49,15 @@
         </div>
         <div class="col-lg-10 col-md-8 text-center text-lg-right text-md-right">
           <div class="header-top-info mb-2 mb-md-0">
-            <a href="tel:+954-562-9109">Call Us : <span>+754-207-4606</span></a>
-            <a href="mailto:atmaxtechnologies@gmail.com"><i class="fas fa-envelope mr-2"></i><span>atmaxtechnologies@gmail.com</span></a>
+            <a href="tel:+954-562-9109">
+              Call Us : <span>@if(isset($general_information->phone)) {{ $general_information->phone }} @endif</span>
+            </a>
+            @if(isset($general_information->email))
+              <a href="mailto:{{ $general_information->email }}">
+                <i class="fas fa-envelope mr-2"></i>
+                <span>{{ $general_information->email }}</span>
+              </a>
+            @endif
           </div>
         </div>
       </div>
@@ -175,8 +182,12 @@
           <div class="logo mb-4">
             <h3>Atmax<span>Tech</span></h3>
           </div>
-          <h6><a href="mailto:atmaxtechnologies@gmail.com">atmaxtechnologies@gmail.com</a></h6>
-          <a href="tel:754-207-4606"><span class="text-color h4">+754-207-4606</span></a>
+          @if(isset($general_information->email))
+            <h6><a href="mailto:{{ $general_information->email }}">{{ $general_information->email }}</a></h6>
+          @endif
+          @if(isset($general_information->phone))
+            <a href="tel:{{ $general_information->phone }}"><span class="text-color h4">{{ $general_information->phone }}</span></a>
+          @endif
         </div>
       </div>
     </div>

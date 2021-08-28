@@ -19,7 +19,7 @@
 	          <span class="text-white">About Us</span>
 	          <h1 class="text-capitalize mb-4 text-lg">Our Company</h1>
 	          <ul class="list-inline">
-	            <li class="list-inline-item"><a href="index.html" class="text-white">Home</a></li>
+	            <li class="list-inline-item"><a href="{{ url('/') }}" class="text-white">Home</a></li>
 	            <li class="list-inline-item"><span class="text-white">/</span></li>
 	            <li class="list-inline-item text-white-50">About Us</li>
 	          </ul>
@@ -35,11 +35,20 @@
 			<div class="row">
 				<div class="col-lg-6">
 					<div class="about-item pr-3 mb-5 mb-lg-0">
-						<span class="h6 text-color">What we are</span>
-						<h2 class="mt-3 mb-4 position-relative content-title">We are dynamic team of creative people</h2>
-						<p class="mb-5">We provide consulting services in the area of IFRS and management reporting, helping companies to reach their highest level. We optimize business processes, making them easier.</p>
-
-						<a href="contact.html" class="btn btn-main btn-round-full">Get started</a>
+						@if (isset($page->sub_heading)) 
+							<span class="h6 text-color">{{ $page->sub_heading }}</span>
+						@endif
+						@if (isset($page->main_heading)) 
+							<h2 class="mt-3 mb-4 position-relative content-title">
+								{{ $page->main_heading }}
+							</h2>
+						@endif
+						<p class="mb-5">
+							@if (isset($page->content)) 
+								{{ $page->content }}
+							@endif
+						</p>
+						<a href="{{ route('contact') }}" class="btn btn-main btn-round-full">Get started</a>
 					</div>
 				</div>
 				<div class="col-lg-6">
@@ -135,16 +144,16 @@
 							<div class="team-img-hover">
 								<ul class="team-social list-inline">
 									<li class="list-inline-item">
-										<a href="https://www.facebook.com/themefisher" class="facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+										<a href="javascript:void(0);" class="facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
 									</li>
 									<li class="list-inline-item">
-										<a href="https://twitter.com/themefisher" class="twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+										<a href="javascript:void(0);" class="twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
 									</li>
 									<li class="list-inline-item">
-										<a href="https://www.instagram.com/themefisher/" class="instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+										<a href="javascript:void(0);" class="instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
 									</li>
 									<li class="list-inline-item">
-										<a href="https://themefisher.com/" class="linkedin"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+										<a href="javascript:void(0);" class="linkedin"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
 									</li>
 								</ul>
 							</div>
@@ -163,16 +172,16 @@
 							<div class="team-img-hover">
 								<ul class="team-social list-inline">
 									<li class="list-inline-item">
-										<a href="https://www.facebook.com/themefisher" class="facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+										<a href="javascript:void(0);" class="facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
 									</li>
 									<li class="list-inline-item">
-										<a href="https://twitter.com/themefisher" class="twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+										<a href="javascript:void(0);" class="twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
 									</li>
 									<li class="list-inline-item">
-										<a href="https://www.instagram.com/themefisher/" class="instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+										<a href="javascript:void(0);" class="instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
 									</li>
 									<li class="list-inline-item">
-										<a href="https://themefisher.com/" class="linkedin"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+										<a href="javascript:void(0);" class="linkedin"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
 									</li>
 								</ul>
 							</div>
@@ -191,16 +200,16 @@
 							<div class="team-img-hover">
 								<ul class="team-social list-inline">
 									<li class="list-inline-item">
-										<a href="https://www.facebook.com/themefisher" class="facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+										<a href="javascript:void(0);" class="facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
 									</li>
 									<li class="list-inline-item">
-										<a href="https://twitter.com/themefisher" class="twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+										<a href="javascript:void(0);" class="twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
 									</li>
 									<li class="list-inline-item">
-										<a href="https://www.instagram.com/themefisher/" class="instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+										<a href="javascript:void(0);" class="instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
 									</li>
 									<li class="list-inline-item">
-										<a href="https://themefisher.com/" class="linkedin"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+										<a href="javascript:void(0);" class="linkedin"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
 									</li>
 								</ul>
 							</div>
@@ -218,16 +227,16 @@
 							<div class="team-img-hover">
 								<ul class="team-social list-inline">
 									<li class="list-inline-item">
-										<a href="https://www.facebook.com/themefisher" class="facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+										<a href="javascript:void(0);" class="facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
 									</li>
 									<li class="list-inline-item">
-										<a href="https://twitter.com/themefisher" class="twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+										<a href="javascript:void(0);" class="twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
 									</li>
 									<li class="list-inline-item">
-										<a href="https://www.instagram.com/themefisher/" class="instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+										<a href="javascript:void(0);" class="instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
 									</li>
 									<li class="list-inline-item">
-										<a href="https://themefisher.com/" class="linkedin"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+										<a href="javascript:void(0);" class="linkedin"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
 									</li>
 								</ul>
 							</div>
@@ -246,16 +255,16 @@
 							<div class="team-img-hover">
 								<ul class="team-social list-inline">
 									<li class="list-inline-item">
-										<a href="https://www.facebook.com/themefisher" class="facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+										<a href="javascript:void(0);" class="facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
 									</li>
 									<li class="list-inline-item">
-										<a href="https://twitter.com/themefisher" class="twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+										<a href="javascript:void(0);" class="twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
 									</li>
 									<li class="list-inline-item">
-										<a href="https://www.instagram.com/themefisher/" class="instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+										<a href="javascript:void(0);" class="instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
 									</li>
 									<li class="list-inline-item">
-										<a href="https://themefisher.com/" class="linkedin"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+										<a href="javascript:void(0);" class="linkedin"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
 									</li>
 								</ul>
 							</div>
@@ -274,16 +283,16 @@
 							<div class="team-img-hover">
 								<ul class="team-social list-inline">
 									<li class="list-inline-item">
-										<a href="https://www.facebook.com/themefisher" class="facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+										<a href="javascript:void(0);" class="facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
 									</li>
 									<li class="list-inline-item">
-										<a href="https://twitter.com/themefisher" class="twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+										<a href="javascript:void(0);" class="twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
 									</li>
 									<li class="list-inline-item">
-										<a href="https://www.instagram.com/themefisher/" class="instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+										<a href="javascript:void(0);" class="instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
 									</li>
 									<li class="list-inline-item">
-										<a href="https://themefisher.com/" class="linkedin"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+										<a href="javascript:void(0);" class="linkedin"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
 									</li>
 								</ul>
 							</div>
