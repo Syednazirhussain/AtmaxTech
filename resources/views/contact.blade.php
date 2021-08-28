@@ -1,13 +1,5 @@
 @extends('default')
 
-@section('css')
-  
-  <style type="text/css">
-    
-  </style>
-
-@endsection
-
 
 @section('content')
 
@@ -85,7 +77,8 @@
   </section>
 
   <div class="google-map">
-  	<div id="map" data-latitude="40.712776" data-longitude="-74.005974" data-marker="images/marker.png" data-marker-name="Megakit"></div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3581.8145076309434!2d-80.4232353849713!3d26.137590383467597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d90ae54b9b8ab5%3A0xa398d3c38ba302ab!2sGlades%20Cir%2C%20Weston%2C%20FL%2033327!5e0!3m2!1sen!2sus!4v1630136886038!5m2!1sen!2sus" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  	{{-- <div id="map" data-latitude="40.712776" data-longitude="-74.005974" data-marker="images/marker.png" data-marker-name="Megakit"></div> --}}
   </div>
 
 @endsection

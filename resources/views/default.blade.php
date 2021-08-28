@@ -219,9 +219,8 @@
 <script src="{{ asset('MegaKit/plugins/counterup/jquery.counterup.min.js') }}"></script>
 
 <!-- Google Map -->
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU" defer></script>
-<script src="{{ asset('MegaKit/plugins/google-map/map.js') }}" defer></script>
-
+{{-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU" defer></script> --}}
+{{-- <script src="{{ asset('MegaKit/plugins/google-map/map.js') }}" defer></script> --}}
 <script src="{{ asset('MegaKit/js/script.js') }}"></script>
 
 <script type="text/javascript">
