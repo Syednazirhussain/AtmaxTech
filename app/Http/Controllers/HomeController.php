@@ -53,7 +53,9 @@ class HomeController extends Controller
 
             $email = $request->get('email');
 
-            Mail::to("Atmaxtechnologies@gmail.com")->cc(config('mail.cc'))
+            $domain_email = config('mail.domain_email');
+
+            Mail::to($domain_email)->cc(config('mail.cc'))
                             ->send(new ContactUs($request->except('_token')));
             
             return response()->json([

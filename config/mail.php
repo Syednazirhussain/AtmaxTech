@@ -13,6 +13,8 @@ return [
     |
     */
 
+    'domain_email'  => env('DOMAIN_EMAIL', 'syednazir13@gmail.com'),
+
     'default' => env('MAIL_MAILER', 'smtp'),
 
     /*
