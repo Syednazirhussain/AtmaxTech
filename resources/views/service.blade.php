@@ -34,7 +34,8 @@
 			<div class="row">
 				<div class="col-lg-4 col-md-6 col-sm-6">
 					<div class="service-item mb-5">
-						<i class="ti-desktop"></i>
+						{{-- <i class="ti-desktop"></i> --}}
+						<i class="fa fa-laptop-house"></i>
 						<h4 class="mb-3">Digital Strategy</h4>
 						<p style="text-align: justify;">
 							Our aim is to help clients find unexpected value and opportunities which creates new business and make it strong digitally. We help clients to develop strategy which maximizes the role which digital plays in excelling customer experience. A well-developed digital strategy aligns leadership management with modern digital techniques. Ideally a digital strategy requires insights capabilities and technologies to improve the overall customer experience.
@@ -54,7 +55,8 @@
 
 				<div class="col-lg-4 col-md-6 col-sm-6">
 					<div class="service-item mb-5">
-						<i class="ti-desktop"></i>
+						{{-- <i class="ti-desktop"></i> --}}
+						<i class="fa fa-pencil-ruler"></i>
 						<h4 class="mb-3">Service Design</h4>
 						<p style="text-align: justify;">
 							User interface is a common practice which is being implemented to different digital projects. But have you thought about service design? Service design is almost 40 years old concept which was used in reviewing and improving the service concept outside the digital world. Initially, it was used to improve and review marketing processes from stakeholder and customer perspective. Our company helps in creating, handling and planning your service design efforts. This helps in achieving favorable results as it affects service providers and customers positively.
@@ -64,7 +66,8 @@
 
 				<div class="col-lg-4 col-md-6 col-sm-6">
 					<div class="service-item mb-5">
-						<i class="ti-desktop"></i>
+						{{-- <i class="ti-desktop"></i> --}}
+						<i class="fa fa-rocket"></i>
 						<h4 class="mb-3">Software Engineering</h4>
 						<p style="text-align: justify;">
 							Atmax provides software engineering services which engages customers and helps to unlock the value of software products and apps. Our engineering services help our customers to build cloud native platforms and products. Users achieve more with different features and capabilities by learning through modern experiences. We ensure high performance engineering services. Our modern techniques of software engineering uplifts your software investments and ensure your needs are met.
@@ -74,7 +77,8 @@
 
 				<div class="col-lg-4 col-md-6 col-sm-6">
 					<div class="service-item mb-5">
-						<i class="ti-desktop"></i>
+						{{-- <i class="ti-desktop"></i> --}}
+						<i class="fa fa-wifi"></i>
 						<h4 class="mb-3">Internet Of Things</h4>
 						<p style="text-align: justify;">
 							Atmax provides hardware and software solutions and guides you throughout your business journey. Whether its service management or policy enforcement Atmax is your only partner which monitors you throughout and develops, consult and deploy steps of the IoT ecosystem. From design to consulting and manufacturing we provide one stop solution for everything.
@@ -104,7 +108,8 @@
 
 				<div class="col-lg-4 col-md-6 col-sm-6">
 					<div class="service-item mb-5">
-						<i class="ti-vector"></i>
+						{{-- <i class="ti-vector"></i> --}}
+						<i class="fa fa-cloud-upload-alt"></i>
 						<h4 class="mb-3">Cloud Infrastructure</h4>
 						<p style="text-align: justify;">
 							We provide cloud infrastructure services which help our clients to build modern and secure platforms on which IT infrastructure is based. Such as IoT, ML, AI. We have expertise in deploying single or multi cloud on Amazon web series, Google Cloud and Microsoft Azure. We help our clients in deploying secure cloud landing zone with automated application delivery.
@@ -124,7 +129,8 @@
 
 				<div class="col-lg-4 col-md-6 col-sm-6">
 					<div class="service-item mb-5">
-						<i class="ti-desktop"></i>
+						{{-- <i class="ti-desktop"></i> --}}
+						<i class="fa fa-robot"></i>
 						<h4 class="mb-3">Hyper Automation</h4>
 						<p style="text-align: justify;">
 							Automation success for any process depends on technology and people. Poor change management, lack of business alignment, disregard of infrastructure management, ill-defined success criteria and many other leads to the failure to automation. At Atmax, our hyper automation framework ensure resiliency irrespective of the deployment model and underlying
