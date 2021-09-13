@@ -27,9 +27,12 @@ class HomeController extends Controller
     public function about () {
 
         $page = Page::where('name', 'about')->first();
+        $general_information = GeneralInformation::where('site_name', config('app.name'))
+                                                    ->first();
 
         $data = [
-            'page'   => $page
+            'page'   => $page,
+            'general_information'   => $general_information
         ];
 
         return view('about', $data);
@@ -94,5 +97,40 @@ class HomeController extends Controller
             ]);
         }
 	}
+
+
+    public function service () {
+
+        $general_information = GeneralInformation::where('site_name', config('app.name'))
+                                                    ->first();
+        $data = [
+            'general_information'   => $general_information
+        ];
+
+        return view('service', $data);
+    }
+
+    public function pricing () {
+
+        $general_information = GeneralInformation::where('site_name', config('app.name'))
+                                                    ->first();
+        $data = [
+            'general_information'   => $general_information
+        ];
+
+        return view('pricing', $data);
+    }
+
+    public function project () {
+
+        $general_information = GeneralInformation::where('site_name', config('app.name'))
+                                                    ->first();
+        $data = [
+            'general_information'   => $general_information
+        ];
+
+        return view('project', $data);
+    }
+
 
 }

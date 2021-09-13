@@ -18,10 +18,11 @@ use App\Http\Controllers\HomeController;
 
 Route::get('/', [HomeController::class, 'index']);
 Route::get('/about', [HomeController::class, 'about'])->name('about');
+
 Route::get('/contact', [HomeController::class, 'contact'])->name('contact');
-
-Route::view('/pricing', 'pricing')->name('pricing');
-Route::view('/project', 'project')->name('project');
-Route::view('/service', 'service')->name('service');
-
 Route::post('/contact', [HomeController::class, 'contact_us'])->name('contact_us');
+
+Route::get('/service', [HomeController::class, 'service'])->name('service');
+Route::get('/pricing', [HomeController::class, 'pricing'])->name('pricing');
+Route::get('/project', [HomeController::class, 'project'])->name('project');
+

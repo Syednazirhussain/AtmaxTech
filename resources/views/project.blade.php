@@ -40,11 +40,10 @@
   				<div class="portflio-item position-relative mb-4">
   					<a href="{{ asset('MegaKit/images/portfolio/1.jpg') }}" class="popup-gallery">
   						<img src="{{ asset('MegaKit/images/portfolio/1.jpg') }}" alt="portfolio" class="img-fluid w-100">
-
   						<i class="ti-plus overlay-item"></i>
   						<div class="portfolio-item-content">
-  							<h3 class="mb-0 text-white">Project california</h3>
-  							<p class="text-white-50">Web Development</p>
+  							<h3 class="mb-0 text-white">Technology</h3>
+  							<p class="text-white-50"></p>
   						</div>
   					</a>
   				</div>
@@ -57,8 +56,8 @@
 
   						<i class="ti-plus overlay-item"></i>
   						<div class="portfolio-item-content">
-  							<h3 class="mb-0 text-white">Project california</h3>
-  							<p class="text-white-50">Web Development</p>
+  							<h3 class="mb-0 text-white">Travel and Hospitality</h3>
+  							<p class="text-white-50"></p>
   						</div>
   					</a>
   				</div>
@@ -68,11 +67,10 @@
   				<div class="portflio-item position-relative mb-4">
   					<a href="{{ asset('MegaKit/images/portfolio/3.jpg') }}" class="popup-gallery">
   						<img src="{{ asset('MegaKit/images/portfolio/3.jpg') }}" alt="portfolio" class="img-fluid w-100">
-
   						<i class="ti-plus overlay-item"></i>
   						<div class="portfolio-item-content">
-  							<h3 class="mb-0 text-white">Project california</h3>
-  							<p class="text-white-50">Web Development</p>
+  							<h3 class="mb-0 text-white">Retail</h3>
+  							<p class="text-white-50"></p>
   						</div>
   					</a>
   				</div>
@@ -85,8 +83,8 @@
 
   						<i class="ti-plus overlay-item"></i>
   						<div class="portfolio-item-content">
-  							<h3 class="mb-0 text-white">Project california</h3>
-  							<p class="text-white-50">Web Development</p>
+  							<h3 class="mb-0 text-white">Health Care</h3>
+  							<p class="text-white-50"></p>
   						</div>
   					</a>
   				</div>
@@ -99,8 +97,8 @@
 
   						<i class="ti-plus overlay-item"></i>
   						<div class="portfolio-item-content">
-  							<h3 class="mb-0 text-white">Project california</h3>
-  							<p class="text-white-50">Web Development</p>
+  							<h3 class="mb-0 text-white">Insurance</h3>
+  							<p class="text-white-50"></p>
   						</div>
   					</a>
   				</div>
@@ -113,8 +111,8 @@
 
   						<i class="ti-plus overlay-item"></i>
   						<div class="portfolio-item-content">
-  							<h3 class="mb-0 text-white">Project california</h3>
-  							<p class="text-white-50">Web Development</p>
+  							<h3 class="mb-0 text-white">Portfolio Design</h3>
+  							<p class="text-white-50"></p>
   						</div>
   					</a>
   				</div>
