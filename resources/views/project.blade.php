@@ -27,7 +27,7 @@
 
         <div class="col-lg-6 col-md-6 mb-5">
           <div class="blog-item">
-            <img loading="lazy" src="{{ asset('MegaKit/images/blog/1.jpg') }}" alt="blog" class="img-fluid rounded">
+            <img loading="lazy" src="{{ asset('assets/images/stock-images/technology.jpg') }}" alt="blog" class="img-fluid rounded">
             <div class="blog-item-content bg-white p-3">
               <h3 class="mt-3 mb-3">
                 <a href="javascript:void(0);">
@@ -44,7 +44,7 @@
 
         <div class="col-lg-6 col-md-6 mb-5">
           <div class="blog-item">
-            <img loading="lazy" src="{{ asset('MegaKit/images/blog/2.jpg') }}" alt="blog" class="img-fluid rounded">
+            <img loading="lazy" src="{{ asset('assets/images/stock-images/travel.jpg') }}" alt="blog" class="img-fluid rounded">
             <div class="blog-item-content bg-white p-3">
               <h3 class="mt-3 mb-3">
                 <a href="javascript:void(0);">Travel and Hospitality</a>
@@ -58,7 +58,7 @@
 
         <div class="col-lg-6 col-md-6 mb-5">
           <div class="blog-item">
-            <img loading="lazy" src="{{ asset('MegaKit/images/blog/3.jpg') }}" alt="blog" class="img-fluid rounded">
+            <img loading="lazy" src="{{ asset('assets/images/stock-images/retail.jpg') }}" alt="blog" class="img-fluid rounded">
             <div class="blog-item-content bg-white p-3">
               <h3 class="mt-3 mb-3">
                 <a href="javascript:void(0);">Retail</a>
@@ -72,7 +72,7 @@
 
         <div class="col-lg-6 col-md-6 mb-5">
           <div class="blog-item">
-            <img loading="lazy" src="{{ asset('MegaKit/images/blog/4.jpg') }}" alt="blog" class="img-fluid rounded">
+            <img loading="lazy" src="{{ asset('assets/images/stock-images/health-care-2.jpg') }}" alt="blog" class="img-fluid rounded">
             <div class="blog-item-content bg-white p-3">
               <h3 class="mt-3 mb-3">
                 <a href="javascript:void(0);">Health Care</a>
@@ -87,7 +87,7 @@
 
         <div class="col-lg-6 col-md-6 mb-5">
           <div class="blog-item">
-            <img loading="lazy" src="{{ asset('MegaKit/images/blog/4.jpg') }}" alt="blog" class="img-fluid rounded">
+            <img loading="lazy" src="{{ asset('assets/images/stock-images/insurance-2.jpg') }}" alt="blog" class="img-fluid rounded">
             <div class="blog-item-content bg-white p-3">
               <h3 class="mt-3 mb-3">
                 <a href="javascript:void(0);">Insurance</a>
