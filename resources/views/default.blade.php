@@ -29,6 +29,15 @@
   <!--Favicon-->
   <link rel="icon" href="{{ asset('MegaKit/images/favicon.png') }}" type="image/x-icon">
 
+  <style type="text/css">
+    
+    nav a.navbar-brand {
+      font-size: 30px;
+    }
+
+  </style>
+
+
   @yield('css')
 
 </head>
@@ -39,6 +48,7 @@
 <header class="navigation">
   <div class="header-top ">
     <div class="container">
+      <!--
       <div class="row justify-content-between align-items-center">
         <div class="col-lg-2 col-md-4">
           <div class="header-top-socials text-center text-lg-left text-md-left">
@@ -61,6 +71,7 @@
           </div>
         </div>
       </div>
+      -->
     </div>
   </div>
 
@@ -69,9 +80,16 @@
       <div class="row">
         <div class="col-lg-12">
           <nav class="navbar navbar-expand-lg px-0 py-4">
+            
+            <!--
             <a class="navbar-brand" href="{{ url('/') }}">
               Atmax<span>Tech</span>
             </a>
+            -->
+            <a class="navbar-brand" href="{{ url('/') }}">
+              AtmaxTechnologies
+            </a>
+
             <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarsExample09"
               aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
               <span class="fa fa-bars"></span>
@@ -79,6 +97,9 @@
             <div class="collapse navbar-collapse text-center" id="navbarsExample09">
               <ul class="navbar-nav ml-auto">
                 <li class="nav-item {{ Request::is('/') ? 'active' : '' }}"><a class="nav-link" href="{{ url('/') }}">Home</a></li>
+                <li class="nav-item {{ Request::is('about') ? 'active' : '' }}"><a class="nav-link" href="{{ url('about') }}">About Us</a></li>
+                
+                <!--
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="javascript:void(0);" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     About <i class="fas fa-chevron-down small"></i>
@@ -86,18 +107,10 @@
                   <ul class="dropdown-menu" aria-labelledby="dropdown03">
                     <li><a class="dropdown-item {{ Request::is('about') ? 'active' : '' }}" href="{{ route('about') }}">Our company</a></li>
                     <li><a class="dropdown-item {{ Request::is('pricing') ? 'active' : '' }}" href="{{ route('pricing') }}">Pricing</a></li>
-                    <!--
-                    <li class="dropdown dropdown-submenu dropright">
-                      <a class="dropdown-item dropdown-toggle" href="#!" id="dropdown0301" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sub Menu</a>
-            
-                      <ul class="dropdown-menu" aria-labelledby="dropdown0301">
-                        <li><a class="dropdown-item" href="index.html">Submenu 01</a></li>
-                        <li><a class="dropdown-item" href="index.html">Submenu 02</a></li>
-                      </ul>
-                    </li>
-                    -->
                   </ul>
                 </li>
+                -->
+
                 <li class="nav-item {{ Request::is('service') ? 'active' : '' }}"><a class="nav-link" href="{{ route('service') }}">Services</a></li>
                 <li class="nav-item {{ Request::is('project') ? 'active' : '' }}"><a class="nav-link" href="{{ route('project') }}">Portfolio</a></li>
                 <li class="nav-item {{ Request::is('contact') ? 'active' : '' }}"><a class="nav-link" href="{{ route('contact') }}">Contact</a></li>
@@ -121,10 +134,13 @@
                 </li>
                 -->
               </ul>
-      
+
+              <!--
               <div class="my-2 my-md-0 ml-lg-4 text-center">
                 <a href="{{ route('contact') }}" class="btn btn-solid-border btn-round-full">Get a Quote</a>
               </div>
+              -->
+
             </div>
           </nav>
         </div>
@@ -180,14 +196,33 @@
       <div class="col-lg-3 col-sm-6">
         <div class="widget">
           <div class="logo mb-4">
-            <h3>Atmax<span>Tech</span></h3>
+            {{-- <h3>Atmax<span>Tech</span></h3> --}}
+            <h3><a href="{{ url('/') }}">AtmaxTechnologies</a></h3>
           </div>
           @if(isset($general_information->email))
-            <h6><a href="mailto:{{ $general_information->email }}">{{ $general_information->email }}</a></h6>
+            <h6>
+              <a href="mailto:{{ $general_information->email }}">
+                <i class="fa fa-envelope"></i>&nbsp;&nbsp;{{ $general_information->email }}
+              </a>
+            </h6>
           @endif
           @if(isset($general_information->phone))
-            <a href="tel:{{ $general_information->phone }}"><span class="text-color h4">{{ $general_information->phone }}</span></a>
+            <h6>
+              <a href="tel:{{ $general_information->phone }}">
+                <i class="fa fa-phone"></i>&nbsp;&nbsp;{{ $general_information->phone }}
+              </a>
+            </h6>
           @endif
+          {{-- 
+            @if(isset($general_information->phone))
+              <a href="tel:{{ $general_information->phone }}">
+                <span class="text-color h4">
+                  {{ $general_information->phone }}
+                </span>
+              </a>
+            @endif
+           --}}
+
         </div>
       </div>
     </div>
