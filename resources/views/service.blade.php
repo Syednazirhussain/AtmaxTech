@@ -1,5 +1,18 @@
 @extends('default')
 
+@section('css')
+	
+	<style type="text/css">
+		
+		.page-title {
+		    padding: 200px 0 !important;
+		}
+
+	</style>
+
+@endsection
+
+
 @section('content')
 
 	<section class="page-title bg-1">
@@ -7,13 +20,13 @@
 	    <div class="row">
 	      <div class="col-md-12">
 	        <div class="block text-center">
-	          <span class="text-white">Our services</span>
+{{-- 	          <span class="text-white">Our services</span>
 	          <h1 class="text-capitalize mb-4 text-lg">What We Do</h1>
 	          <ul class="list-inline">
 	            <li class="list-inline-item"><a href="{{ url('/') }}" class="text-white">Home</a></li>
 	            <li class="list-inline-item"><span class="text-white">/</span></li>
 	            <li class="list-inline-item text-white-50">Our services</li>
-	          </ul>
+	          </ul> --}}
 	        </div>
 	      </div>
 	    </div>
@@ -26,8 +39,8 @@
 			<div class="row justify-content-center">
 				<div class="col-lg-7 text-center">
 					<div class="section-title">
-						<span class="h6 text-color">Our Services</span>
-						<h2 class="mt-3 content-title ">We provide a wide range of creative services </h2>
+						<span class="h3 text-color">Our Services</span>
+						{{-- <h2 class="mt-3 content-title ">We provide a wide range of creative services </h2> --}}
 					</div>
 				</div>
 			</div>
@@ -99,7 +112,7 @@
 				<div class="col-lg-4 col-md-6 col-sm-6">
 					<div class="service-item mb-5">
 						<i class="ti-layers"></i>
-						<h4 class="mb-3">Data modernization</h4>
+						<h4 class="mb-3">Data Modernization</h4>
 						<p style="text-align: justify;">
 							At Atmax, we have a qualified team of data experts who can understand your business and provide the best data modernization solution for your company to make it more competitive, efficient and successful. Our deep analysis of data understanding makes us expert in our field. We understand the impact of modern data analysis and provide the insights to clients to execute the best approach for data modernization.
 						</p>
@@ -156,6 +169,7 @@
 	</section>
 	<!--  Section Services End -->
 
+	<!--
 	<section class="cta-2">
 		<div class="container">
 			<div class="cta-block p-5 rounded">
@@ -171,5 +185,6 @@
 			</div>
 		</div>
 	</section>
+	-->	
 
 @endsection

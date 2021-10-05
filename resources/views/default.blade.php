@@ -231,17 +231,21 @@
       <div class="row">
         <div class="col-lg-6">
           <div class="copyright">
-            Copyright &copy; {{ date('Y') }}, Designed &amp; Developed by 
+            Copyright &copy; {{ date('Y') }}
+            <!--
+            , Designed &amp; Developed by 
             <a href="https://my.linkedin.com/in/syed-nazir-hussain-bb4162b8" target="_blank">
               Syed Nazir Hussain
             </a>
+            -->
           </div>
         </div>
         <div class="col-lg-6 text-left text-lg-right">
           <ul class="list-inline footer-socials">
             <li class="list-inline-item"><a href="javascript:void(0);"><i class="fab fa-facebook-f mr-2"></i>Facebook</a></li>
             <li class="list-inline-item"><a href="javascript:void(0);"><i class="fab fa-twitter mr-2"></i>Twitter</a></li>
-            <li class="list-inline-item"><a href="javascript:void(0);"><i class="fab fa-pinterest-p mr-2 "></i>Pinterest</a></li>
+            {{-- <li class="list-inline-item"><a href="javascript:void(0);"><i class="fab fa-pinterest-p mr-2 "></i>Pinterest</a></li> --}}
+            <li class="list-inline-item"><a href="javascript:void(0);"><i class="fab fa-linkedin-in mr-2"></i>LinkedIn</a></li>
           </ul>
         </div>
       </div>

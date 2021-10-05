@@ -1,5 +1,16 @@
 @extends('default')
 
+@section('css')
+  
+  <style type="text/css">
+    
+    .page-title {
+        padding: 200px 0 !important;
+    }
+
+  </style>
+
+@endsection
 
 @section('content')
 
@@ -8,13 +19,13 @@
       <div class="row">
         <div class="col-md-12">
           <div class="block text-center">
-            <span class="text-white">Latest works</span>
+{{--             <span class="text-white">Latest works</span>
             <h1 class="text-capitalize mb-4 text-lg">Portfolio</h1>
             <ul class="list-inline">
               <li class="list-inline-item"><a href="{{ url('/') }}" class="text-white">Home</a></li>
               <li class="list-inline-item"><span class="text-white">/</span></li>
               <li class="list-inline-item text-white-50">Latest works</li>
-            </ul>
+            </ul> --}}
           </div>
         </div>
       </div>
@@ -23,8 +34,17 @@
 
   <section class="section blog-wrap bg-gray">
     <div class="container">
-      <div class="row">
 
+      <div class="row justify-content-center">
+        <div class="col-lg-7 text-center">
+          <div class="section-title">
+            <span class="h3 text-color">Domains That We Are Targeting</span>
+            {{-- <h2 class="mt-3 content-title ">We provide a wide range of creative services </h2> --}}
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
         <div class="col-lg-6 col-md-6 mb-5">
           <div class="blog-item">
             <img loading="lazy" src="{{ asset('assets/images/stock-images/technology.jpg') }}" alt="blog" class="img-fluid rounded">

@@ -13,7 +13,7 @@
                             Prepare For A New future
                         </span>
                         <h1 class="animated fadeInUp mb-5">
-                            Our work is a<br>presentation of our <br>capabilities.
+                            Our Work Is A<br>Representation Of Our <br>Capabilities.
                         </h1>
                         <a href="{{ route('contact') }}" class="btn btn-main animated fadeInUp btn-round-full" aria-label="Get started">Get started<i class="btn-icon fa fa-angle-right ml-2"></i></a>
                     </div>
@@ -30,11 +30,12 @@
                     <div class="section-title">
                         {{-- <span class="h6 text-color ">We are creative & expert people</span> --}}
                         <h2 class="mt-3 content-title">
-                            We strive to provide our clients the best solutions to fit their needs.
+                            We Strive To Provide Our Clients The Best Solutions to Fit Their Needs.
                         </h2>
                     </div>
                 </div>
             </div>
+            <!--
             <div class="row justify-content-center">
                 <div class="col-lg-4 col-md-6 col-12">
                     <div class="intro-item mb-5 mb-lg-0">
@@ -45,7 +46,6 @@
                         </p>
                     </div>
                 </div>
-                <!--
                 <div class="col-lg-4 col-md-6">
                     <div class="intro-item mb-5 mb-lg-0">
                         <i class="ti-medall color-one"></i>
@@ -60,8 +60,8 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, ducimus.</p>
                     </div>
                 </div>
-                -->
             </div>
+            -->
         </div>
     </section>
 
@@ -84,6 +84,15 @@
                                 We provide consulting services in the area of IFRS and management reporting, helping
                                 companies to reach their highest level. We optimize business processes, making them easier.
                             </p>
+
+                            <h4 class="mb-3 position-relative">Modern and Responsive Design</h4>
+                            <p class="mb-5">
+                                A modern design that creates dynamic adjustments to the appearance of a 
+                                website and a method of creating web properties so that the device they 
+                                are used on determines the way that the site will be displayed.
+                            </p>
+
+
                             <a href="{{ route('contact') }}" class="btn btn-main btn-round-full">
                                 Get started
                             </a>
@@ -93,42 +102,11 @@
             </div>
         </div>
     </section>
-
     <!-- Section About End -->
-    <!-- section Counter Start -->
-    <section class="section counter">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="counter-item text-center mb-5 mb-lg-0">
-                        <h3 class="mb-0"><span class="counter-stat font-weight-bold">1730</span> +</h3>
-                        <p class="text-muted">Project Done</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="counter-item text-center mb-5 mb-lg-0">
-                        <h3 class="mb-0"><span class="counter-stat font-weight-bold">125 </span>M </h3>
-                        <p class="text-muted">User Worldwide</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="counter-item text-center mb-5 mb-lg-0">
-                        <h3 class="mb-0"><span class="counter-stat font-weight-bold">39</span></h3>
-                        <p class="text-muted">Availble Country</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="counter-item text-center">
-                        <h3 class="mb-0"><span class="counter-stat font-weight-bold">14</span></h3>
-                        <p class="text-muted">Award Winner </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- section Counter End  -->
+
 
     <!-- Section Cta Start -->
+    <!--
     <section class="section cta">
         <div class="container">
             <div class="row">
@@ -143,8 +121,12 @@
             </div>
         </div>
     </section>
+    -->
     <!--  Section Cta End-->
+
+
     <!-- Section Testimonial Start -->
+    <!--
     <section class="section testimonial">
         <div class="container">
             <div class="row">
@@ -156,7 +138,6 @@
                 </div>
             </div>
         </div>
-
         <div class="container">
             <div class="row testimonial-wrap">
                 <div class="testimonial-item position-relative">
@@ -214,7 +195,10 @@
             </div>
         </div>
     </section>
+    -->
     <!-- Section Testimonial End -->
+
+
     <section class="section latest-blog bg-2">
         <div class="container">
             <div class="row justify-content-center">
@@ -285,6 +269,7 @@
         </div>
     </section>
 
+    <!--
     <section class="mt-70 position-relative">
         <div class="container">
             <div class="cta-block-2 bg-gray p-5 rounded border-1">
@@ -300,6 +285,43 @@
             </div>
         </div>
     </section>
+    -->
+
+    <!-- section Counter Start -->
+    <section class="section counter">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="counter-item text-center mb-5 mb-lg-0">
+                        <h3 class="mb-0"><span class="counter-stat font-weight-bold">1730</span> +</h3>
+                        <p class="text-muted">Projects Done</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="counter-item text-center mb-5 mb-lg-0">
+                        <h3 class="mb-0"><span class="counter-stat font-weight-bold">125 </span>M </h3>
+                        <p class="text-muted">Users Worldwide</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="counter-item text-center mb-5 mb-lg-0">
+                        <h3 class="mb-0"><span class="counter-stat font-weight-bold">39</span></h3>
+                        <p class="text-muted">Available Country</p>
+                    </div>
+                </div>
+                <!--
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="counter-item text-center">
+                        <h3 class="mb-0"><span class="counter-stat font-weight-bold">14</span></h3>
+                        <p class="text-muted">Award Winner </p>
+                    </div>
+                </div>
+                -->
+            </div>
+        </div>
+    </section>
+    <!-- section Counter End  -->
+
 
 
 @endsection

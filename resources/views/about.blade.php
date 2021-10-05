@@ -4,6 +4,10 @@
 	
 	<style type="text/css">
 		
+		.page-title {
+		    padding: 200px 0 !important;
+		}
+
 	</style>
 
 @endsection
@@ -15,15 +19,17 @@
 	  <div class="container">
 	    <div class="row">
 	      <div class="col-md-12">
-	        <div class="block text-center">
-	          <span class="text-white">About Us</span>
-	          <h1 class="text-capitalize mb-4 text-lg">Our Company</h1>
-	          <ul class="list-inline">
-	            <li class="list-inline-item"><a href="{{ url('/') }}" class="text-white">Home</a></li>
-	            <li class="list-inline-item"><span class="text-white">/</span></li>
-	            <li class="list-inline-item text-white-50">About Us</li>
-	          </ul>
-	        </div>
+			<div class="block text-center">
+				<!--
+				<span class="text-white">About Us</span>
+				<h1 class="text-capitalize mb-4 text-lg">Our Company</h1>
+				<ul class="list-inline">
+					<li class="list-inline-item"><a href="{{ url('/') }}" class="text-white">Home</a></li>
+					<li class="list-inline-item"><span class="text-white">/</span></li>
+					<li class="list-inline-item text-white-50">About Us</li>
+				</ul>
+				-->
+			</div>
 	      </div>
 	    </div>
 	  </div>
@@ -48,7 +54,7 @@
 								{{ $page->content }}
 							@endif
 						</p>
-						<a href="{{ route('contact') }}" class="btn btn-main btn-round-full">Get started</a>
+						{{-- <a href="{{ route('contact') }}" class="btn btn-main btn-round-full">Get started</a> --}}
 					</div>
 				</div>
 				<div class="col-lg-6">
@@ -67,19 +73,19 @@
 			<div class="row justify-content-center">
 				<div class="col-lg-4 col-md-6 col-sm-6">
 					<div class="about-info-item mb-4 mb-lg-0">
-						<h3 class="mb-3"><span class="text-color mr-2 text-md ">01.</span>Our Mission</h3>
+						<h3 class="mb-3"><span class="text-color mr-2 text-md "></span>Our Mission</h3>
 						<p>llum similique ducimus accusamus laudantium praesentium, impedit quaerat, itaque maxime sunt deleniti voluptas distinctio .</p>
 					</div>		
 				</div>
 				<div class="col-lg-4 col-md-6 col-sm-6">
 					<div class="about-info-item mb-4 mb-lg-0">
-						<h3 class="mb-3"><span class="text-color mr-2 text-md">02.</span>Vission</h3>
+						<h3 class="mb-3"><span class="text-color mr-2 text-md"></span>Vision</h3>
 						<p>llum similique ducimus accusamus laudantium praesentium, impedit quaerat, itaque maxime sunt deleniti voluptas distinctio .</p>
 					</div>		
 				</div>
 				<div class="col-lg-4 col-md-6 col-sm-6">
 					<div class="about-info-item mb-4 mb-lg-0">
-						<h3 class="mb-3"><span class="text-color mr-2 text-md">03.</span>Our Approach</h3>
+						<h3 class="mb-3"><span class="text-color mr-2 text-md"></span>Our Approach</h3>
 						<p>llum similique ducimus accusamus laudantium praesentium, impedit quaerat, itaque maxime sunt deleniti voluptas distinctio .</p>
 					</div>		
 				</div>
@@ -88,6 +94,7 @@
 	</section>
 
 	<!-- section Counter Start -->
+	<!--
 	<section class="section counter bg-counter">
 		<div class="container">
 			<div class="row">
@@ -122,6 +129,7 @@
 			</div>
 		</div>
 	</section>
+	-->
 	<!-- section Counter End  -->
 
 	<!--  Section Services Start -->
@@ -130,8 +138,8 @@
 			<div class="row justify-content-center">
 				<div class="col-lg-7 text-center">
 					<div class="section-title">
-						<span class="h6 text-color">Our Team</span>
-						<h2 class="mt-3 content-title">Expert Team member to get best service</h2>
+						<span class="h3 text-color">Meet Our Team of Experts</span>
+						{{-- <h2 class="mt-3 content-title">Expert Team member to get best service</h2> --}}
 					</div>
 				</div>
 			</div>
@@ -307,7 +315,9 @@
 		</div>
 	</section>
 	<!--  Section Services End -->
+
 	<!-- Section Testimonial Start -->
+	<!--
 	<section class="section testimonial bg-gray">
 		<div class="container">
 			<div class="row justify-content-center">
@@ -373,6 +383,7 @@
 			</div>
 		</div>
 	</section>
+	-->
 	<!-- Section Testimonial End -->
 
 @endsection
