@@ -38,7 +38,7 @@
       <div class="row justify-content-center">
         <div class="col-lg-7 text-center">
           <div class="section-title">
-            <span class="h3 text-color">Domains That We Are Targeting</span>
+            <span class="h3 text-color">Supporting Industries</span>
             {{-- <h2 class="mt-3 content-title ">We provide a wide range of creative services </h2> --}}
           </div>
         </div>

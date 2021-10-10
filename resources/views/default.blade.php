@@ -112,8 +112,8 @@
                 -->
 
                 <li class="nav-item {{ Request::is('service') ? 'active' : '' }}"><a class="nav-link" href="{{ route('service') }}">Services</a></li>
-                <li class="nav-item {{ Request::is('project') ? 'active' : '' }}"><a class="nav-link" href="{{ route('project') }}">Portfolio</a></li>
-                <li class="nav-item {{ Request::is('contact') ? 'active' : '' }}"><a class="nav-link" href="{{ route('contact') }}">Contact</a></li>
+                <li class="nav-item {{ Request::is('project') ? 'active' : '' }}"><a class="nav-link" href="{{ route('project') }}">Industries</a></li>
+                <li class="nav-item {{ Request::is('contact') ? 'active' : '' }}"><a class="nav-link" href="{{ route('contact') }}">Contact US</a></li>
                 <!--
                 <li class="nav-item dropdown @@blog">
                   <a class="nav-link dropdown-toggle" href="javascript:void(0);" id="dropdown05" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
