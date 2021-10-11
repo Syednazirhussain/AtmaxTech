@@ -31,9 +31,16 @@
 
   <style type="text/css">
     
-    nav a.navbar-brand {
+/*    nav a.navbar-brand {
       font-size: 30px;
+    }*/
+
+
+    #navbar {
+        background: #010101 !important;
+        max-height: 110px;
     }
+
 
   </style>
 
@@ -87,7 +94,7 @@
             </a>
             -->
             <a class="navbar-brand" href="{{ url('/') }}">
-              AtmaxTechnologies
+              <img src="{{ asset('assets/images/atmax-logo.jpeg') }}" height="70px">
             </a>
 
             <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarsExample09"
