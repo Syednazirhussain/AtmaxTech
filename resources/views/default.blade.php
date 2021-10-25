@@ -94,7 +94,7 @@
             </a>
             -->
             <a class="navbar-brand" href="{{ url('/') }}">
-              <img src="{{ asset('assets/images/atmax-logo.jpeg') }}" height="70px">
+              <img src="{{ asset('assets/images/logo.jpeg') }}" height="70px">
             </a>
 
             <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarsExample09"
